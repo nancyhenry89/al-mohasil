@@ -1,13 +1,51 @@
 body{
   font-family: 'Open Sans', sans-serif;
 }
-.benifit .icon{display: inline-block;background: url('../img/benifits.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 102px;height: 102px;}
-.manage-icon{background-position: -2px -0px;}
-.send-icon { background-position: -104px -0px; }
-.collect-icon { background-position: -2px -103px}
-.upload-icon { background-position: -104px -103px }
-.save-icon { background-position: -2px -206px}
-.Schedule-icon { background-position: -104px -206px }
+.benifit {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 29px;
+    transition: all .5s ease;
+    height: 284px;
+}
+
+.benifit:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.benifit:hover .icon {
+    margin-top: -10px;
+}
+.benifit .title {
+    color: #4A90E2;
+    margin-top: 21px;
+    font-size: 16px;
+    word-spacing: 4px;
+    transition: all .5s ease;
+}
+
+.benifit:hover .title {
+    margin-top: 10px;
+}
+
+.benifit:hover p {margin-top: 10px;}
+
+.benifit p {
+    width: 250px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 23px;
+    color: #4a4a4a;
+    word-spacing: 5px;
+    transition: all .2s ease;
+}
+.benifit .icon{display: inline-block;background: url('../img/benifits.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 90px;height: 90px;background-size: 180px;transition: all .5s ease;}
+.benifit .icon.manage-icon{background-position: 2px 1px;}
+.benifit .icon.send-icon {background-position: -88px 1px;}
+.benifit .icon.collect-icon {background-position: 1px -88px;}
+.benifit .icon.upload-icon {background-position: -89px -87px;}
+.benifit .icon.save-icon {background-position: 1px -178px;}
+.benifit .icon.Schedule-icon {background-position: -89px -178px;}
 .banner {
     background:url('../img/home-banner.png');
     padding: 0;
@@ -25,7 +63,7 @@ body{
     color: #fff;
 }
 
-.up-to-date { background:url('../img/up-to-date.png');}
+.up-to-date {background:url('../img/up-to-date.png');height: 631px;background-size: cover;color: #fff;}
 
 .how {
     background: url('../img/how-bg.png');
@@ -33,6 +71,7 @@ body{
     color: #fff;
     text-align: center;
     height: 404px;
+    margin-bottom: 14px;
 }
 .how .icon{display: inline-block;background: url('../img/how.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 110px;height: 90px;background-size: 90px;margin-bottom: 22px;position: relative;}
 
@@ -62,9 +101,9 @@ body{
 
 
 .support .icon
-{ display: inline-block; background: url('../img/support.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
- .help .icon { background-position: -0px -0px; width: 90px; height: 110px; }
-.faq .icon { background-position: -0px -110px; width: 90px; height: 110px; }
+{display: inline-block;background: url('../img/support.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;background-size: 80px;float: left;margin-top: 10px;}
+ .help .icon {background-position: -0px -97px;width: 80px;height: 100px;}
+.faq .icon {background-position: 0px 2px;width: 80px;height: 100px;}
 a.angel-down {
     display: block;
     width: 30px;
@@ -350,4 +389,119 @@ button.btn.btn-primary:hover {
     height: 15px;
     font-size: 11px;
     line-height: 16px;
+}
+
+.container h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.digitilize button.btn.btn-primary {
+    height: 50px;
+    /* margin-top: 8px; */
+    width: 261px;
+    position: relative;
+    /* width: 86px; */
+    /* height: 35px; */
+    margin: auto;
+    background: #fff;
+    color: #515151;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 15px;
+    margin-top: 8px;
+    /* background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #053c9c), color-stop(2, #159dbe) ); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+}
+
+.container.digitilize {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.digitilize button.btn.btn-primary:before {
+
+}
+
+.digitilize button.btn.btn-primary:after {
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    content: '';
+    z-index: -1;
+    border-radius: 32px;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
+}
+.digitilize button.btn.btn-primary span {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #fe185e), color-stop(2, #fd6242) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.support {
+    text-align: left;
+    margin: auto;
+    margin-top: 100px;
+    float: left;
+    width: 91%;
+    left: 5%;
+    margin-bottom: -70px;
+    z-index: 99;
+    position: relative;
+}
+
+.support>div {
+    box-shadow: 0 11px 14px 0 rgba(0, 0, 0, 0), 0 8px 10px 0 rgba(0, 0, 0, 0.19);
+    width: 48%;
+    margin-right: 1%;
+    padding: 0;
+    margin-left: 1%;
+    background: #fff;
+    border-radius: 3px;
+    height: 161px;
+    padding-top: 10px;
+}
+.support .content {
+    float: left;
+    padding-left: 27px;
+}
+
+.support .content .title {
+    font-weight: bold;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #fe185e), color-stop(2, #fd6242) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+}
+
+.support .content p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 12px;
+    width: 163px;
+}
+.up-to-date h2 {
+    margin-top: 272px;
+    margin-left: 66px;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.up-to-date button.btn.btn-primary {
+    margin-top: 82px;
+    margin-left: 180px;
+    width: 266px;
+    height: 50px;
+    font-size: 18px;
 }
