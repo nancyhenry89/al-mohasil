@@ -55,6 +55,7 @@ body{
 }
 .main-content {
     padding: 0;
+    margin-bottom: 250px;
 }
 
 .contact {
@@ -640,6 +641,12 @@ footer {
     height: 250px;
     padding-top: 70px;
     color: #fff;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
 }
 
 html {
@@ -693,3 +700,15 @@ footer .container {
 .partner-item {
     height: 170px;
 }
+.icon-1, .icon-2, .icon-3, .icon-4, .icon-5,
+.icon-6, .icon-7, .icon-8
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.icon-1 { background-position: -0px -0px; width: 300px; height: 300px; }
+.icon-2 { background-position: -300px -0px; width: 300px; height: 300px; }
+.icon-3 { background-position: -0px -300px; width: 300px; height: 300px; }
+.icon-4 { background-position: -300px -300px; width: 300px; height: 300px; }
+.icon-5 { background-position: -0px -600px; width: 300px; height: 300px; }
+.icon-6 { background-position: -300px -600px; width: 300px; height: 300px; }
+.icon-7 { background-position: -0px -900px; width: 300px; height: 300px; }
+.icon-8 { background-position: -300px -900px; width: 300px; height: 300px; }
