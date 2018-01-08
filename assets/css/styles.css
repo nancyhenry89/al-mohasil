@@ -690,3 +690,6 @@ footer .container {
 .input-name span{background-position: -0px -0px;width: 22px;height: 20px;}
 .input-email span {background-position: -0px -20px;width: 19px;height: 12px;top: 11px;}
 .text-area span {background-position: -0px -32px;width: 18px;height: 20px;top: 20px;}
+.partner-item {
+    height: 170px;
+}
