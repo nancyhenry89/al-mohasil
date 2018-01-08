@@ -29,21 +29,36 @@ body{
 
 .how {
     background: url('../img/how-bg.png');
-    background-size: contain;
+    background-size: cover;
     color: #fff;
     text-align: center;
+    height: 404px;
 }
-.how .icon{ display: inline-block; background: url('../img/how.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left;  width: 100px; height: 100px;}
+.how .icon{display: inline-block;background: url('../img/how.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 110px;height: 90px;background-size: 90px;margin-bottom: 22px;position: relative;}
 
-.join .icon { background-position: -0px -0px}
-.start .icon { background-position: -0px -100px }
-.monitor .icon { background-position: -0px -200px}
+.join .icon {background-position: 10px -0px;}
+.start .icon {background-position: 10px -90px;}
+
+.start .icon:before {content: ' ';border: 6px solid #fff;width: 23px;position: absolute;height: 7px;left: -19px;top: 41px;}
+.join .icon:before {content: ' ';border: 6px solid #fff;width: 23px;position: absolute;height: 7px;right: -19px;top: 41px;}
+.monitor .icon:before {content: ' ';border: 6px solid #fff;width: 23px;position: absolute;height: 7px;left: -19px;top: 41px;}
+
+.start .icon:after {
+    content: ' ';
+    border: 6px solid #fff;
+    width: 23px;
+    position: absolute;
+    height: 7px;
+    right: -19px;
+    top: 41px;
+}
+.monitor .icon {background-position: 10px -180px;}
 
 .what .icon
-{ display: inline-block; background: url('../img/what.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; width: 60px; height: 60px;  }
+{display: inline-block;background: url('../img/what.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 55px;height: 55px;background-size: 55px;}
 
 .what .icon.about-icon { background-position: -0px -0px; }
-.what .icon.vision-icon { background-position: -0px -60px; }
+.what .icon.vision-icon {background-position: -0px -55px;}
 
 
 .support .icon
@@ -85,6 +100,7 @@ header .navbar>.container-fluid .navbar-brand {
     color: #64bde7;
     letter-spacing: 1.5px;
     padding-left: 12px;
+    transition: all .5s ease;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
@@ -99,6 +115,13 @@ header .navbar>.container-fluid .navbar-brand {
     border-radius: 16px;
     width: 93px;
     height: 34px;
+    transition: all .5s ease;
+}
+
+.btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
+    background: #1b51a8;
+    color: #fff;
+    border-color: #fff;
 }
 .main .logo {
     margin-top: 92px;
@@ -121,19 +144,14 @@ header .navbar>.container-fluid .navbar-brand {
     line-height: 23px;
 }
 button.btn.btn-primary {
-	background-image: -webkit-gradient(
-	linear,
-	left bottom,
-	right bottom,
-	color-stop(0, #FF0468),
-	color-stop(1, #FC7637)
-);
+	background-image: -webkit-gradient(  linear,  left bottom,  right bottom,  color-stop(0, #ff0c66),  color-stop(1, #FC7637) );
 	background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
 	background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
 	background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
 	background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
 	background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
 	border-radius: 30px;
+	border: 0;
 	}
 
 .main button.btn.btn-primary {
@@ -143,9 +161,193 @@ button.btn.btn-primary {
     font-size: 19px;
 }
 
+button.btn.btn-primary:focus {outline: none;}
+
+button.btn.btn-primary:hover {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #FF0468), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FC7637 0%, #ff1364 100%);
+}
+
 .main a.angel-down {
     left: 50%;
     position: relative;
     margin-left: -15px;
     margin-top: 82px;
+}
+.container h3 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 48px;
+    margin-bottom: 50px;
+}
+
+.what h3 {
+    color: #484848;
+}
+
+.what p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    word-spacing: 4px;
+}
+.row.about-vision {
+    margin: auto;
+    margin-top: 30px;
+    float: left;
+    width: 95%;
+    left: 5%;
+    position: relative;
+}
+
+.row.about-vision>div {
+    padding: 60px 6px;
+    height: 420px;
+    margin-bottom: 63px;
+    transition: all .5s ease;
+}
+
+.about-vision .title {
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-top: 24px;
+    background: -webkit-gradient(  linear,  left bottom,  right bottom,  color-stop(0, #053c9c),  color-stop(2, #159dbe) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-vision p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4A4A4A;
+    width: 80%;
+    text-align: left;
+    margin: 0;
+    letter-spacing: .7px;
+    margin-top: 14px;
+}
+.about-vision button.btn.btn-primary {
+    position:relative;
+    width: 86px;
+    height: 35px;
+    margin: auto;
+    background: #fff;
+    color: #515151;
+    padding: 0;
+    font-size: 12px;
+    text-align: left;
+    line-height: 30px;
+    padding: 0 15px;
+    opacity: 0;
+    margin-top: 58px;
+    margin-left: -16px;
+ }
+
+.about-vision button.btn.btn-primary i {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
+    border-radius: 50%;
+    color: #fff;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    right: 6px;
+    top: 9px;
+    text-align: center;
+}
+ .about-vision button.btn.btn-primary:after{
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    content: '';
+    z-index: -1;
+    border-radius: 25px;
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
+ }
+.row.about-vision>div:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 46px;
+    padding-top: 50px;
+}
+
+.row.about-vision>div:hover button.btn.btn-primary {
+    opacity: 1;
+}
+.how label {
+    display: block;
+    font-size: 16px;
+    width: 250px;
+    margin: auto;
+    letter-spacing: 1px;
+    line-height: 19px;
+}
+
+.how .join:after {
+    content: ' ';
+    border: 2px dashed #fff;
+    width: calc(100% - 132px);
+    position: absolute;
+    height: 3px;
+    display: block;
+    left: calc(50% + 51px);
+    top: 45px;
+}
+
+.how .join:before {
+    content: ' ';
+    border: 2px dashed #fff;
+    width: calc(100% - 112px);
+    position: absolute;
+    height: 3px;
+    display: block;
+    left: calc(50% + 61px);
+    top: 45px;
+}
+
+.how .start:after {content: ' ';border: 2px dashed #fff;width: calc(100% - 104px);position: absolute;height: 3px;display: block;left: calc(50% + 53px);top: 45px;}
+.how a.link {
+    color: #fff;
+    margin-top: 84px;
+    float\:;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin-left: -25px;
+}
+
+.how a.link i {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
+    background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+    background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
+    border-radius: 50%;
+    color: #ca3f3c;
+    width: 15px;
+    height: 15px;
+    font-size: 11px;
+    line-height: 16px;
 }
