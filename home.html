@@ -35,7 +35,26 @@
                         <li><a href="how-it-works.html">HOW IT WORKS</a></li>
                         <li><a href="FAQ.html">FAQ</a></li>
                      </ul>
-                     <button type="button" class="btn btn-default navbar-btn">LOGIN</button>
+                     <button type="button" class="btn btn-default navbar-btn"><a href="#" data-toggle="modal" data-target="#login-modal">LOGIN</a></button>
+                     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+          <div class="popup-label">Welcome to AlMohasil</div>
+				<div class="loginmodal-container">
+					<h1 class="popup-title login">LOGIN</h1><br>
+				  <form>
+					<input type="text" name="user" placeholder="Username">
+					<input type="password" name="pass" placeholder="Password">
+          <div class="login-help">
+          <a href="#">forgot password?</a>
+          <label class="checkbox-inline"><input type="checkbox" value="">Keep me logged in</label>
+          </div>
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login">
+				  </form>
+
+
+				</div>
+			</div>
+		  </div>
                   </div>
                   <!-- /.navbar-collapse -->
                </div>

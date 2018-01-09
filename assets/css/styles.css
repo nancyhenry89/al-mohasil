@@ -159,6 +159,14 @@ header .navbar>.container-fluid .navbar-brand {
     transition: all .5s ease;
 }
 
+.navbar-btn a {
+    color: #fff;
+}
+
+.navbar-btn a:hover {
+    text-decoration: none;
+}
+
 .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
     background: #1b51a8;
     color: #fff;
@@ -807,4 +815,134 @@ footer .container {
 
 .faq-item {
     margin-bottom: 15px;
+}
+/*login form*/
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/****** LOGIN MODAL ******/
+.loginmodal-container {
+  max-width: 350px;
+  width: 100% !important;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+
+
+.loginmodal-container input[type=submit] {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  background: #DEDEDE;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.loginmodal-container input[type=text], input[type=password] {
+  height: 44px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #F7F7F7;
+  border: 1px solid #979797;
+  border-top: 1px solid #979797;
+  border-radius: 5px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #4A4A4A;
+  font-style: italic;
+}
+
+.loginmodal-container input[type=text]:hover, input[type=password]:hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.loginmodal {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+  height: 36px;
+  padding: 0 8px;
+/* border-radius: 3px; */
+/* -webkit-user-select: none;
+  user-select: none; */
+}
+
+.loginmodal-submit {
+  /* border: 1px solid #3079ed; */
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  background-color: #4d90fe;
+  padding: 17px 0px;
+  font-size: 14px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.loginmodal-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #357ae8;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.loginmodal-container a {
+  text-decoration: none;
+  color: #16A4C1;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.login-help{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.popup-title {
+    text-align: center;
+    margin: 0;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 17px;
+    background-image: -webkit-gradient(  linear,  left bottom,  right bottom,  color-stop(0, #1993C8),  color-stop(1,#002092) );
+    background-image: -o-linear-gradient(right, #1993C8 0%, #002092 150%);
+    background-image: -moz-linear-gradient(right, #1993C8 0%, #002092 150%);
+    background-image: -webkit-linear-gradient(right, #1993C8 0%, #002092 150%);
+    background-image: -ms-linear-gradient(right, #1993C8 0%, #002092 150%);
+    background-image: linear-gradient(to right, #1993C8 0%, #002092 150%);
+}
+
+.loginmodal-container form {
+    padding: 20px;
+    margin: 0;
+}
+.loginmodal-container label.checkbox-inline {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #4A4A4A;
+}
+.popup-label {
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 90px;
 }
