@@ -701,18 +701,15 @@ footer .container {
 .partner-item {
     height: 170px;
 }
-.icon-1, .icon-2, .icon-3, .icon-4, .icon-5,
-.icon-6, .icon-7, .icon-8
-{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
-
-.icon-1 { background-position: -0px -0px; width: 300px; height: 300px; }
-.icon-2 { background-position: -300px -0px; width: 300px; height: 300px; }
-.icon-3 { background-position: -0px -300px; width: 300px; height: 300px; }
-.icon-4 { background-position: -300px -300px; width: 300px; height: 300px; }
-.icon-5 { background-position: -0px -600px; width: 300px; height: 300px; }
-.icon-6 { background-position: -300px -600px; width: 300px; height: 300px; }
-.icon-7 { background-position: -0px -900px; width: 300px; height: 300px; }
-.icon-8 { background-position: -300px -900px; width: 300px; height: 300px; }
+.how-content .icon {display: inline-block;background: url('../img/how-it-works.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 90px;height: 90px;background-size: 180px;}
+.how-content .icon.icon-1 {background-position: -0px -0px;/* width: 300px; *//* height: 300px; */}
+.how-content .icon.icon-2 {background-position: -90px -0px;}
+.how-content .icon.icon-3 {background-position: -0px -90px;}
+.how-content .icon.icon-4 {background-position: -90px -90px;}
+.how-content .icon.icon-5 {background-position: 0px -180px;}
+.how-content .icon.icon-6 {background-position: -90px -180px;}
+.how-content .icon.icon-7 {background-position: -0px -270px;}
+.how-content .icon.icon-8 {background-position: -90px -270px;}
 
 .main-banner {
     height: 333px;
@@ -724,7 +721,6 @@ footer .container {
 .main-banner h2{
     font-size: 39px;
 }
-
 .main-banner button.btn.btn-primary {
     width: 270px;
     height: 50px;
@@ -741,15 +737,23 @@ footer .container {
     padding-left: 72px;
     padding-top: 15px;
 }
-.about-content {
+.about-content, .how-content {
     color: #272626;
 }
-
 .about-content h3 {
     font-size: 31px;
     font-weight: bold;
     margin-bottom: 43px;
     line-height: 43px;
+    text-align:center
+}
+.how-content h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 43px;
+    line-height: 43px;
+    text-align:center;
+    margin-top: 44px;
 }
 .about-content p {
     font-size: 18px;
@@ -769,4 +773,38 @@ footer .container {
 
 .about-img img {
     width: 100%;
+}
+.how-content label {
+    font-size: 18px;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+.how-content p {
+    letter-spacing: 1.5px;
+    font-size: 13px;
+}
+
+.how-content .content {
+    margin-bottom: 51px;
+}
+.faq-content {
+    padding: 0 70px;
+    color: #4b4b4b;
+    font-weight: bold;
+}
+
+.faq-item label {
+    font-size: 18px;
+}
+
+.faq-item p {
+    padding-left: 22px;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
 }
