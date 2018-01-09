@@ -905,7 +905,7 @@ footer .container {
   text-align: center;
   display: block;
   font-size: 16px;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .login-help{
@@ -975,3 +975,10 @@ footer .container {
     top: 98px;
 }
 .how-content .row:last-of-type .col-md-1:before ,.how-content .row:last-of-type .col-md-1 .icon:before,.how-content .row:last-of-type .col-md-1 .icon:after  {display:none}
+.loginmodal-container p {
+    padding: 10px 20px;
+}
+
+.loginmodal-container label {
+   font-size:16px
+}
