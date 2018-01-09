@@ -946,3 +946,31 @@ footer .container {
     margin-bottom: 30px;
     margin-top: 90px;
 }
+.how-content .icon:before {
+    content: ' ';
+    border: 2px dashed #fe375e;
+    position: absolute;
+    height: 25px;
+    display: block;
+    left: 57px;
+    top: 101px;
+}
+.how-content .icon:after {
+    content: ' ';
+    border: 2px solid #fd7038;
+    width: 10px;
+    position: absolute;
+    height: 1px;
+    right: 34px;
+    top: 126px;
+}
+
+.how-content .col-md-1:before {
+    content: ' ';
+    border: 2px solid #fe1f60;
+    width: 10px;
+    position: absolute;
+    height: 1px;
+    right: 34px;
+    top: 98px;
+}
