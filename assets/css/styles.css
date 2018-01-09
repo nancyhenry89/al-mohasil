@@ -974,3 +974,4 @@ footer .container {
     right: 34px;
     top: 98px;
 }
+.how-content .row:last-of-type .col-md-1:before ,.how-content .row:last-of-type .col-md-1 .icon:before,.how-content .row:last-of-type .col-md-1 .icon:after  {display:none}
