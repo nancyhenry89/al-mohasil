@@ -1092,3 +1092,34 @@ header.su-admin-header {
 .user-area .user-img img {
     width: 100%;
 }
+
+
+
+.part-4, .part-2, .part-1, .part-3, .part-5
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.part-4 { background-position: -0px -0px; width: 688px; height: 408px; }
+.part-2 { background-position: -0px -408px; width: 684px; height: 408px; }
+.part-1 { background-position: -0px -816px; width: 424px; height: 408px; }
+.part-3 { background-position: -0px -1224px; width: 424px; height: 408px; }
+.part-5 { background-position: -424px -816px; width: 28px; height: 406px; }
+
+
+
+.sort-default-copy-5, .checkmark, .sort-down, .trash, .stopwatch,
+.bell, .download, .pencil, .preview, .thumbs-up-copy,
+.clipboard
+{ display: inline-block; background: url('png.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.sort-default-copy-5 { background-position: -0px -0px; width: 66px; height: 42px; }
+.checkmark { background-position: -0px -42px; width: 66px; height: 45px; }
+.sort-down { background-position: -0px -87px; width: 66px; height: 42px; }
+.trash { background-position: -0px -129px; width: 66px; height: 60px; }
+.stopwatch { background-position: -0px -189px; width: 63px; height: 60px; }
+.bell { background-position: -0px -249px; width: 60px; height: 60px; }
+.download { background-position: -0px -309px; width: 60px; height: 60px; }
+.pencil { background-position: -0px -369px; width: 60px; height: 60px; }
+.preview { background-position: -0px -429px; width: 60px; height: 36px; }
+.thumbs-up-copy { background-position: -0px -465px; width: 60px; height: 60px; }
+.clipboard { background-position: -0px -525px; width: 48px; height: 60px; }
+Your HTML
