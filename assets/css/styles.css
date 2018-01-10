@@ -709,15 +709,15 @@ footer .container {
 .partner-item {
     height: 170px;
 }
-.how-content .icon {display: inline-block;background: url('../img/how-it-works.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 90px;height: 90px;background-size: 180px;}
+.how-content .icon {display: inline-block;background: url('../img/how-it-works.png') no-repeat;overflow: hidden;text-indent: -9999px;text-align: left;width: 80px;height: 80px;background-size: 160px;}
 .how-content .icon.icon-1 {background-position: -0px -0px;/* width: 300px; *//* height: 300px; */}
-.how-content .icon.icon-2 {background-position: -90px -0px;}
-.how-content .icon.icon-3 {background-position: -0px -90px;}
-.how-content .icon.icon-4 {background-position: -90px -90px;}
-.how-content .icon.icon-5 {background-position: 0px -180px;}
-.how-content .icon.icon-6 {background-position: -90px -180px;}
-.how-content .icon.icon-7 {background-position: -0px -270px;}
-.how-content .icon.icon-8 {background-position: -90px -270px;}
+.how-content .icon.icon-2 {background-position: -80px -0px;}
+.how-content .icon.icon-3 {background-position: -0px -80px;}
+.how-content .icon.icon-4 {background-position: -80px -80px;}
+.how-content .icon.icon-5 {background-position: 0px -160px;}
+.how-content .icon.icon-6 {background-position: -80px -160px;}
+.how-content .icon.icon-7 {background-position: -0px -240px;}
+.how-content .icon.icon-8 {background-position: -80px -240px;}
 
 .main-banner {
     height: 333px;
@@ -950,10 +950,10 @@ footer .container {
     content: ' ';
     border: 2px dashed #fe375e;
     position: absolute;
-    height: 25px;
+    height: 32px;
     display: block;
-    left: 57px;
-    top: 101px;
+    left: 54px;
+    top: 94px;
 }
 .how-content .icon:after {
     content: ' ';
@@ -961,7 +961,7 @@ footer .container {
     width: 10px;
     position: absolute;
     height: 1px;
-    right: 34px;
+    right: 37px;
     top: 126px;
 }
 
@@ -971,8 +971,8 @@ footer .container {
     width: 10px;
     position: absolute;
     height: 1px;
-    right: 34px;
-    top: 98px;
+    right: 37px;
+    top: 92px;
 }
 .how-content .row:last-of-type .col-md-1:before ,.how-content .row:last-of-type .col-md-1 .icon:before,.how-content .row:last-of-type .col-md-1 .icon:after  {display:none}
 .loginmodal-container p {
