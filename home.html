@@ -40,17 +40,22 @@
                         <div class="modal-dialog">
                            <div class="popup-label">Welcome to AlMohasil</div>
                            <div class="loginmodal-container">
-                              <h1 class="popup-title login">LOGIN</h1>
+                              <h1 class="popup-title login">
+                                <span>LOGIN</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                              </h1>
                               <br>
-                              <form>
-                                 <input type="text" name="user" placeholder="Username">
-                                 <input type="password" name="pass" placeholder="Password">
+                              <form onsubmit="return validate()" method="post" name="login-form">
+                                 <input id="username" type="text" name="user" placeholder="Username">
+                                 <input id="password" type="password" name="pass" placeholder="Password">
                                  <div class="login-help">
                                    <a href="#" data-toggle="modal" data-dismiss="modal" data-target="#forgot-password">forgot password?</a>
 
                                     <label class="checkbox-inline"><input type="checkbox" value="">Keep me logged in</label>
                                  </div>
-                                 <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                                 <input type="submit" name="login" class="login loginmodal-submit" value="Login" disabled="disabled">
                               </form>
                            </div>
                         </div>
@@ -59,18 +64,47 @@
                         <div class="modal-dialog">
                            <div class="popup-label">Welcome to AlMohasil</div>
                            <div class="loginmodal-container text-center">
-                              <h1 class="popup-title login">FORGOT PASSWORD?</h1>
+                              <h1 class="popup-title login">
+                                <div class="modal-back" data-toggle="modal" data-dismiss="modal" data-target="#login-modal"><i class="fa fa-arrow-left" aria-hidden="true"></i> </div>
+                                <span>FORGOT PASSWORD?<span>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </h1>
                               <br>
                               <p>To reset your password please enter an email adress used for registration.</p>
                               <label>You’ve registered as:</label>
                               <form>
                                  <input type="text" name="email" placeholder="email">
-                                 <input type="submit" name="login" class="login loginmodal-submit" value="RESET PASSWORD">
+                                 <input data-toggle="modal" data-dismiss="modal" data-target="#password-restore" type="submit" name="reset" class="login loginmodal-submit" value="RESET PASSWORD" disabled="disabled">
                                  <a class="link">Cancel</a>
                               </form>
                            </div>
                         </div>
                      </div>
+                     <div class="modal fade" id="password-restore" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                           <div class="popup-label">Welcome to AlMohasil</div>
+                           <div class="loginmodal-container text-center">
+                              <h1 class="popup-title login">
+                                <div class="modal-back" data-toggle="modal" data-dismiss="modal" data-target="#forgot-password"><i class="fa fa-arrow-left" aria-hidden="true"></i> </div>
+                                <span>PASWORD RESTORE</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                              </h1>
+                              <br>
+                              <div class="checkmark"></div>
+                              <label>Please check your inbox</label>
+                              <p>To complete your request and restore your password please check your inbox and follow the steps described in a letter.</p>
+                              <form>
+                                 <a class="link">Haven’t received an email?</a>
+                                 <input type="submit" name="resend" class="login loginmodal-submit resend" value="Resend">
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+
                   </div>
                   <!-- /.navbar-collapse -->
                </div>

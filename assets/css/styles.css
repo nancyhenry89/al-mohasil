@@ -832,14 +832,24 @@ footer .container {
 
 
 
+.loginmodal-container input[type=submit][disabled=disabled] {
+
+  background: #DEDEDE;
+
+}
 .loginmodal-container input[type=submit] {
   width: 100%;
   display: block;
   margin-bottom: 10px;
   position: relative;
-  background: #DEDEDE;
   font-size: 16px;
   border-radius: 5px;
+  background-image: -webkit-gradient(  linear,  left bottom,  right bottom,  color-stop(0, #ff0c66),  color-stop(1, #FC7637) );
+  background-image: -o-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+  background-image: -moz-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+  background-image: -webkit-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+  background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
+  background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
 }
 
 .loginmodal-container input[type=text], input[type=password] {
@@ -925,6 +935,7 @@ footer .container {
     background-image: -webkit-linear-gradient(right, #1993C8 0%, #002092 150%);
     background-image: -ms-linear-gradient(right, #1993C8 0%, #002092 150%);
     background-image: linear-gradient(to right, #1993C8 0%, #002092 150%);
+    position: relative;
 }
 
 .loginmodal-container form {
@@ -981,4 +992,103 @@ footer .container {
 
 .loginmodal-container label {
    font-size:16px
+}
+.auth-failed .popup-title.login {
+    background: #FF0000;
+}
+
+.auth-failed .popup-title.login:after {
+    content: " (ERROR)";
+}
+
+.auth-failed .loginmodal-container input[type=password] {
+    border-color: #D0021B;
+    color: #D0021B;
+    background: #FFEFEF;
+}
+
+.auth-failed .loginmodal-container input[type=submit] {
+    background: red;
+}
+.checkmark {background:url(../img/checkmark.png);width: 45px;height: 45px;background-size: 45px;background-repeat: no-repeat;margin: auto;}
+
+.loginmodal-container input.resend[type=submit] {
+    background: transparent;
+    border: 1px solid #24a7c3;
+    color: #27a7c3;
+    margin-top: 30px;
+}
+.popup-title button.close {
+    color: #fff;
+    text-shadow: none;
+    background: none;
+    font-size: 32px;
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    border: 0;
+    opacity: 1;
+}
+.modal-back {
+    position: absolute;
+    left: 20px;
+    top: 19px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.su-admin-header .navbar-default .navbar-collapse {
+    margin-left: 382px;
+}
+.su-admin-header .navbar-default .navbar-collapse {
+    margin-left: 301px;
+}
+
+header.su-admin-header .navbar>.container-fluid .navbar-brand {
+    width: 93px;
+}
+header.su-admin-header {
+    background-image: -ms-linear-gradient(top, #002092 0%, #0E87BA 100%);
+    background-image: -moz-linear-gradient(top, #002092 0%, #0E87BA 100%);
+    background-image: -o-linear-gradient(top, #002092 0%, #0E87BA 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #002092), color-stop(100, #0E87BA));
+    background-image: -webkit-linear-gradient(top, #002092 0%, #0E87BA 100%);
+    background-image: linear-gradient(to bottom, #002092 0%, #0E87BA 100%);
+}
+.user-area {
+    float: left;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+.user-area .user-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    float: left;
+}
+
+.user-area .username {
+    color: #fff;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 35px;
+    padding-left: 10px;
+}
+
+.user-area .username i {
+    font-size: 20px;
+}
+
+.user-area .user-img img {
+    width: 100%;
 }
