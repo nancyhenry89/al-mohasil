@@ -1202,6 +1202,7 @@ body{
      background: url(../img/part-4.png) no-repeat;
      background-position: 0px 93px;
      background-size: 40px;
+     padding-top: 0!important;
 }
  .part-4:after {
      content:"";
@@ -1290,7 +1291,8 @@ body{
      width: 92%;
      margin: auto;
      margin-top: 20px;
-     padding: 10px 25px;
+     padding: 10px 10px;
+     padding-right: 27px;
 }
  .dashboard-data>div {
      border-radius: 5px;
@@ -1300,6 +1302,7 @@ body{
      border-bottom: 2px solid #cccccc;
      background-color: #fff;
      padding-top: 5px;
+     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
  .dashboard-data .signle-col span,.dashboard-data .double-col span {
      -webkit-transform: rotate(-90deg);
@@ -1358,7 +1361,7 @@ body{
      width: 90%;
      padding-bottom: 18px;
 }
- .dashboard-data .double-col .col-cont:first-child div.current {
+ .dashboard-data .double-col .col-cont:first-child div.current,.dashboard-data .double-col .col-cont:first-child div.all {
      margin-left: 17px;
 }
  .dashboard-data .double-col .col-cont:first-child div.current,.dashboard-data .double-col .col-cont:first-child div.all {
@@ -1388,14 +1391,15 @@ body{
      background: #f8f8f8;
 }
  .figure.big-fig {
-     font-size: 40px;
+     font-size: 46px;
      margin-top: 2px;
+     text-decoration: underline;
 }
  .dashboard button.btn.btn-primary {
-     width: 220px;
+     width: 254px;
      position: relative;
      margin: auto;
-     background: #ffffff;
+     background-color: transparent!important;
      color: #515151;
      padding: 0;
      font-size: 15px;
@@ -1404,7 +1408,7 @@ body{
      padding: 0 15px;
      margin-top: 8px;
      left: 50%;
-     margin-left: -110px;
+     margin-left: -120px;
      height: 35px;
 }
  .dashboard button.btn.btn-primary:after {
@@ -1413,7 +1417,7 @@ body{
      bottom: -6px;
      left: -6px;
      right: -6px;
-     content: ' ';
+     /* content: ' '; */
      z-index: -1;
      border-radius: 4px;
      background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #ff0c66), color-stop(1, #FC7637) );
@@ -1435,6 +1439,7 @@ body{
 }
  .table-filters {
     margin-top: 43px;
+    margin-bottom: 10px;
 }
  .tablecontent {
     /* width: 92%;
@@ -1534,6 +1539,9 @@ body{
  .tablecontent thead th {
      border: 1px solid #0a4573;
 }
+
+.tablecontent thead {
+}
  .tablecontent table {
      border: 1px solid #989898;
      font-size:12px
@@ -1544,8 +1552,8 @@ body{
      float: left;
 }
  .action-btns .btn.btn-primary {
-     height: 25px;
-     width: 25px;
+     height: 28px;
+     width: 28px;
      border-radius: 3px;
      padding: 0;
 }
@@ -1554,15 +1562,18 @@ body{
      background-size: 23px;
      border-radius: 4px;
      width: 22px;
-     height: 13px;
+     height: 14px;
      display: inline-block;
 }
  button.btn.btn-primary.view .icon {
-     background-position: 1px 55px;
+     background-position: 1px 57px;
+     background-size: 24px;
+     height: 14px;
 }
  button.btn.btn-primary.down .icon {
-     background-position: 2px 79px;
+     background-position: 2px 83px;
      background-size: 20px;
+     height: 18px;
 }
  button.btn.btn-primary.delete .icon {
      background-position: 1px 370px;
@@ -1621,8 +1632,7 @@ a.page-link {
     background: #1a92c7;
     color: #fff;
     border-radius: 5px;
-    width: 90px;
-    text-align: center;
+    width: 100px;
 }
 
 .pagination>li>a, .pagination>li>span {
@@ -1645,7 +1655,7 @@ a.page-link {
 .pagination>li {
 }
 
-ul.pagination {margin: 20 auto;left: 50%;position: relative;margin-left: -211px;}
+ul.pagination {margin: 20 auto;left: 50%;position: relative;margin-left: -263px;margin-bottom: 30px;}
 .tabs label {
     float:  left;
     font-weight: bold;
@@ -1675,5 +1685,87 @@ ul.pagination {margin: 20 auto;left: 50%;position: relative;margin-left: -211px;
     margin-left: 0;
 }
 
-ul.nav.nav-pills {
+ul.nav.nav-pills {margin: 0px 0;}
+.table-search .input-group.add-on {
+    position: relative;
+    width: 75%;
+    margin-left: 2%;
+}
+
+.table-search .input-group-btn {
+    position: absolute;
+    right: -39px;
+    top: 0px;
+    height: 34px;
+}
+
+.table-search .input-group-btn .btn {border-left: 0;height: 100%;}
+
+input#srch-term {
+    border-right: 0;
+}
+
+button.btn.btn-default .glyphicon {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+
+.table-search form.navbar-form {
+    margin-top: 0;
+    width: 100%;
+}
+.table-dropdown button.btn.btn-primary {
+    width: 90px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: #fff;
+    color: #676767;
+    border: 1px solid;
+    text-align: left;
+}
+li.active {}.nav-pills>li:first-of-type a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+li.active {}.nav-pills>li:last-of-type a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.table-dropdown button.btn.btn-primary i {
+    position: absolute;
+    right: 19px;
+    font-size: 19px;
+}
+.table-search label,.table-dropdown label {
+    font-weight: normal;
+    font-size: 12px;
+}
+a.page-link.prev {
+    text-align: right;
+    width: 100px;
+}
+
+a.page-link.prev i {
+    position: absolute;
+    left: 13px;
+    top: 9px;
+}
+
+a.page-link.next {
+    text-align: left;
+}
+
+a.page-link.next i {
+    position: absolute;
+    right: 13px;
+    top: 9px;
+}
+.dashboard button.btn.btn-primary {
+    background: url('../img/btn-bg.png');
+    background-size: 230px;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position: 10px;
 }
