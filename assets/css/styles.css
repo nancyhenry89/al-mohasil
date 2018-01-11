@@ -1575,9 +1575,13 @@ body{
      height: 18px;
 }
  button.btn.btn-primary.delete .icon {
-     background-position: 1px 370px;
-     background-size: 15px;
-     width: 17px;
+     background-image: url(../img/table-icons.png);
+     border-radius: 4px;
+     display: inline-block;
+     background-position: 1px 300px;
+     background-size: 19px;
+     width: 20px;
+     height: 17px;
 }
  button.btn.btn-primary.view {
      background: #319EF4;
@@ -1932,4 +1936,76 @@ td span.plus {
 }
 .invoice-btns {
     padding-right: 20px;
+}
+button.btn.btn-primary.add {
+    width: 200px;
+    background: #E2F3FF;
+    border-radius: 4px;
+    color: #1A92C8;
+    border: 1px solid;
+    position: relative;
+}
+
+button.btn.btn-primary.add .icon {
+    background: url('../img/add-user.png');
+    width: 32px;
+    height: 16px;
+    display: inline-block;
+    background-size: 32px;
+    position: absolute;
+    left: 11px;
+    top: 8px;
+}
+.client-status button.btn.btn-primary.delete {
+    display: inline-block;
+    background-position: 1px 305px;
+    background-size: 19px;
+    height: 28px;
+    width: 48px;
+    border-radius: 3px;
+    padding: 0;
+    background: #FF0467;
+}
+.client-status button.btn.btn-primary.edit {
+    background: #1A92C8;
+    width: 70px;
+    border-radius: 3px;
+    height: 28px;
+    font-size: 13px;
+    text-align: right;
+    position: relative;
+}
+
+.client-status button.btn.btn-primary.list {
+    background: #1A9D9B;
+    width: 120px;
+    border-radius: 3px;
+    height: 28px;
+    font-size: 13px;
+    text-align: right;
+    position: relative;
+}
+
+.client-status button.btn.btn-primary.list .icon {
+    background-image: url(../img/table-icons.png);
+    border-radius: 4px;
+    display: inline-block;
+    background-position: 0px 185px;
+    background-size: 19px;
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    left: 8px;
+}
+
+.client-status button.btn.btn-primary.edit .icon {
+    background-image: url(../img/table-icons.png);
+    border-radius: 4px;
+    display: inline-block;
+    background-position: 1px 231px;
+    background-size: 19px;
+    width: 20px;
+    height: 17px;
+    position: absolute;
+    left: 7px;
 }
