@@ -1,6 +1,6 @@
 <html>
    <head>
-      <title>Al Mohasil- Admin Dashboard</title>
+      <title>Al Mohasil- Admin Express Invoice</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -26,8 +26,8 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
-                        <li class="active"><a href="su-admin-dahboard.html" >DASHBOARD <span class="sr-only">(current)</span></a></li>
-                        <li><a href="su-admin-express-invoice.html">EXPRESS INVOICE</a></li>
+                        <li><a href="su-admin-dashboard.html" >DASHBOARD <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="su-admin-express-invoice.html">EXPRESS INVOICE</a></li>
                         <li><a href="su-admin-clients.html">CLIENTS</a></li>
                         <li><a href="su-reports.html">REPORTS</a></li>
                         <li><a href="su-admin-settings.html">SETTINGS</a></li>
@@ -49,64 +49,104 @@
          </div>
       </header>
       <div class="container-fluid main-content main-su">
-         <div class="container dashboard">
+         <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Dashboard</h2>
+                  <h2>Express Invoice</h2>
                </div>
             </div>
-            <div class="row dashboard-data">
-               <div class="col-md-2 signle-col part-1">
-                  <label>TRANSACTIONS</label>
-                  <div class="current">
-                     <span>CURRENT</span>
-                     <div class="figure">330</div>
+            <div class="row express-invoice">
+              <div class="col-md-3 form">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Client name:</label>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="client-name"/>
+                    </div>
                   </div>
-                  <div class="all">
-                     <span>ALL</span>
-                     <div class="figure">500</div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Mobile number:</label>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="mobile"/>
+                    </div>
                   </div>
-               </div>
-               <div class="col-md-4 double-col part-2">
-                  <div class="col-cont">
-                     <label>DEBIT</label>
-                     <div class="current">
-                        <span>CURRENT</span>
-                        <div class="figure">500</div>
-                     </div>
-                     <div class="all">
-                        <span>ALL</span>
-                        <div class="figure">700</div>
-                     </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Email address: <span>(optional)</span></label>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="text" name="email"/>
+                    </div>
                   </div>
-                  <div class="col-cont">
-                     <label>DEBIT</label>
-                     <div class="current">
-                        <span>CURRENT</span>
-                        <div class="figure">100</div>
-                     </div>
-                     <div class="all">
-                        <span>ALL</span>
-                        <div class="figure">200</div>
-                     </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Save Client</label>
+                      <input type="checkbox" name="save-client"/>
+                    </div>
                   </div>
-               </div>
-               <div class="col-md-2 signle-col part-3">
-                  <label>TOTAL VALUE</label>
-                  <div class="current">
-                     <span>CURRENT</span>
-                     <div class="figure">330</div>
+              </div>
+              <div class="col-md-9 table-cont">
+                  <div class="row table-actions">
+                    <div class="col-md-12">
+                     <button class="btn btn-primary down"><span class="icon"></span></button>
+                     <button class="btn btn-primary send"><span class="icon"></span></button>
+                     <button class="btn btn-primary up"><span class="icon"></span></button>
+                   </div>
                   </div>
-                  <div class="all">
-                     <span>ALL</span>
-                     <div class="figure">500</div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="tablecontent">
+                         <table class="table table-striped">
+                            <thead class="thead-light">
+                               <tr>
+                                  <th scope="col"><span class="head-text"></span></th>
+                                  <th scope="col"><span class="head-text">Description</span></span></th>
+                                  <th scope="col"><span class="head-text">QTY</span></th>
+                                  <th scope="col"><span class="head-text">Unit Price </span></th>
+                                  <th scope="col"><span class="head-text">Total Price </span></th>
+                                  <th scope="col"><span class="head-text">Options</span></th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                  <td scope="row"><span class="plus">+</span></td>
+                                  <td>LG TV 50 inch</td>
+                                  <td>2</td>
+                                  <td>50$</td>
+                                  <td>100$</td>
+                                  <td class="action-btns">
+                                     <button class="btn btn-primary down"><span class="icon"></span></button>
+                                     <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                  </td>
+                               </tr>
+                               <tr>
+                                  <td scope="row"><span class="plus">+</span></td>
+                                  <td>LG TV 50 inch</td>
+                                  <td>2</td>
+                                  <td>50$</td>
+                                  <td>100$</td>
+                                  <td class="action-btns">
+                                     <button class="btn btn-primary down"><span class="icon"></span></button>
+                                     <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                  </td>
+                               </tr>
+                            </tbody>
+                         </table>
+                         <div class="tabel-total">
+                           <div class="item-labels">TOTAL</div>
+                           <div class="figure">150$</div>
+                         </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
-               <div class="col-md-4 barcode-col part-4">
-                  <label>BALANCE ON 10/12/2017 19:26</label>
-                  <div class="figure big-fig">2,000</div>
-                  <button class="btn btn-primary"><span>REQUEST TRANSFER</span></button>
-               </div>
+                  <div class="row invoice-btns text-right">
+                    <button class="btn btn-primary now"><span class="icon"></span><span class="btn-txt">SEND INVOICE</span></button>
+                    <button class="btn btn-primary later"><span class="icon"></span><span class="btn-txt">SEND LATER</span></button>
+                  </div>
+              </div>
             </div>
          </div>
          <div class="container table-cont">
