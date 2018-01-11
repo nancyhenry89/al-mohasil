@@ -1453,7 +1453,7 @@ body{
      */
 }
  .tablecontent .btns-status button.btn.btn-primary:first-of-type {
-     width: 90px;
+     width: 110px;
      border-radius: 5px;
      font-size: 10px;
      text-transform: capitalize;
@@ -1491,6 +1491,10 @@ body{
 }
  .tablecontent .btns-status.pending button.btn.btn-primary {
      background: #b463d1;
+}
+
+.tablecontent .btns-status.completed button.btn.btn-primary {
+    background: #ff8200;
 }
  .table-striped>tbody>tr:nth-of-type(odd) {
      background: #F7F7F7;
@@ -2008,4 +2012,127 @@ button.btn.btn-primary.add .icon {
     height: 17px;
     position: absolute;
     left: 7px;
+}
+.tablecontent  td.btns-status.debit button.btn.btn-primary {
+    background: #F9C612;
+    width: 70px!important;
+    text-align: center;
+}
+
+td.btns-status.credit .btn {
+    background: #03A678;
+    text-align: center!important;
+    width: 70px!important;
+}
+
+td.btns-status.credit span, td.btns-status.debit span {
+    float: none;
+}
+.tablecontent .btns-status.completed button.btn.btn-primary:first-of-type {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #FFD33E), color-stop(1, #FF8200) );
+    background-image: -o-linear-gradient(right, #FFD33E 0%, #FF8200 100%);
+    background-image: -moz-linear-gradient(right, #FFD33E 0%, #FF8200 100%);
+    background-image: -webkit-linear-gradient(right, #FFD33E, #FF8200 100%);
+    background-image: -ms-linear-gradient(right, #FFD33E 0%, #FF8200 100%);
+    background-image: linear-gradient(to right, #FFD33E 0%, #FF8200 100%);
+}
+
+.tablecontent .btns-status.completed button.btn.btn-primary .icon {
+    background-size: 19px!important;
+    background-position: 1 -134px;
+    height: 17px;
+}
+.reports-data button.btn.btn-primary.dropdown-toggle {
+    border-radius: 5px;
+    margin-left: 10px;
+    background: #fff;
+    color: #676767;
+    border: 1px solid;
+    text-align: left;
+    position: relative;
+    float: right;
+    width: 99px;
+    font-size: 12px;
+    height: 35px;
+}
+
+.reports-data button.btn.btn-primary.dropdown-toggle i {
+    position: absolute;
+    right: 6px;
+    font-size: 16px;
+}
+
+.Reports-data label {
+    width: auto;
+    float:  left;
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.Reports-data .table-search label {
+    width: auto;
+}
+
+.Reports-data .table-search form.navbar-form {
+    padding-left: 0;
+}
+
+.Reports-data .table-search .input-group.add-on {
+    width: 86%;
+}
+
+.row.Reports-data {
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.row.Reports-data {}
+.reports h2 {
+    margin-top: 38px;
+}
+.reports h2 {
+    text-align: right;
+    margin-right: -40px;
+}
+.header-btn button.btn.btn-primary {
+    width: 248px;
+    position: relative;
+    background-color: transparent!important;
+    color: #515151;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0 15px;
+    height: 35px;
+    background: url(../img/btn-bg.png);
+    background-size: 230px;
+    background-repeat: no-repeat;
+    padding: 0;
+    background-position: 10px;
+    margin-top: 34px;
+}
+
+.header-btn button.btn.btn-primary span {
+    background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #fe185e), color-stop(2, #fd6242) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+.header-btn {
+    text-align: right;
+    padding-right: 56px;
+}
+
+.header-btn button.btn.btn-primary .icon {
+    background: url('../img/export.png');
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px 9px;
 }
