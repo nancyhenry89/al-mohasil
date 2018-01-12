@@ -1432,7 +1432,7 @@ header.su-admin-header.settings {
      background-image: -ms-linear-gradient(right, #FF0468 0%, #FC7637 100%);
      background-image: linear-gradient(to right, #FF0468 0%, #FC7637 100%);
 }
- .dashboard button.btn.btn-primary span {
+ .dashboard .dashboard-data button.btn.btn-primary span {
      background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0, #fe185e), color-stop(2, #fd6242) );
      -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
@@ -1577,6 +1577,7 @@ header.su-admin-header.settings {
      background-position: 1px 57px;
      background-size: 24px;
      height: 14px;
+     transform: scale;
 }
  button.btn.btn-primary.down .icon {
      background-position: 2px 83px;
@@ -1737,11 +1738,16 @@ button.btn.btn-default .glyphicon {
     border: 1px solid;
     text-align: left;
 }
-li.active {}.nav-pills>li:first-of-type a {
+li.active {
+}.nav-pills>li:first-of-type a {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-li.active {}.nav-pills>li:last-of-type a {
+.overview-tabs li.active a,.nav-tabs>li.active>a,.overview-tabs .nav-tabs>li.active>a:focus,.overview-tabs .nav-tabs>li.active>a:hover {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+    border: 0;
+    font-weight: bold;
+}.nav-pills>li:last-of-type a {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -1774,7 +1780,7 @@ a.page-link.next i {
     right: 13px;
     top: 9px;
 }
-.dashboard button.btn.btn-primary {
+.dashboard .dashboard-data button.btn.btn-primary {
     background: url('../img/btn-bg.png');
     background-size: 230px;
     background-repeat: no-repeat;
@@ -1946,7 +1952,7 @@ td span.plus {
 .invoice-btns {
     padding-right: 20px;
 }
-button.btn.btn-primary.add {
+.add-client button.btn.btn-primary.add {
     width: 200px;
     background: #E2F3FF;
     border-radius: 4px;
@@ -1955,7 +1961,7 @@ button.btn.btn-primary.add {
     position: relative;
 }
 
-button.btn.btn-primary.add .icon {
+.add-client button.btn.btn-primary.add .icon {
     background: url('../img/add-user.png');
     width: 32px;
     height: 16px;
@@ -2280,3 +2286,154 @@ button.btn.btn-primary.reset i {
 .container.form-cont.settings {
     margin-bottom: 30px;
 }
+.owner .navbar-nav>li>.dropdown-menu:before,.owner .navbar-nav>li>.dropdown-menu:after {
+    bottom: 100%;
+    left: 36%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.owner .navbar-nav>li>.dropdown-menu:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #0050a5;
+    border-width: 12px;
+    margin-left: -2px;
+}
+
+.owner .navbar-nav>li>.dropdown-menu:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #f5f7fa;
+    border-width: 14px;
+    margin-left: -4px;
+}
+.owner .navbar-nav>li>.dropdown-menu li {
+    width: 20%;
+}
+.row.overview-filters {
+    width: 92%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 10px;
+    padding-right: 27px;
+}
+
+.overview-filters button.btn.btn-primary.dropdown-toggle {
+    width: 76%;
+    position: relative;
+    margin-left: 1%;
+    border-radius: 4px;
+    background: #fff!important;
+    border:  1px solid;
+    left: auto;
+    text-align: left;
+    color: #515151;
+}
+
+.overview-filters button.btn.btn-primary.dropdown-toggle i {
+    position: absolute;
+    right: 19px;
+    font-size: 19px;
+    top:  7px;
+}
+.overview-filters button.btn.btn-primary.add {
+    background: #46A1E1!important;
+    color: #fff;
+}
+
+.overview-filters button.btn.btn-primary.add .icon {
+    font-size: 22px;
+    width: 20px;
+    display: inline-block;
+    margin-left: -10px;
+    margin-top: -1px;
+    display: block;
+    float: left;
+}
+
+.overview-filters button.btn.btn-primary.edit {
+    background: #22B88D!important;
+    color: #fff;
+}
+.overview-filters button.btn.btn-primary.edit .icon {
+    background-image: url(../img/table-icons.png);
+    border-radius: 4px;
+    display: inline-block;
+    background-position: 1px 206px;
+    background-size: 17px;
+    width: 19px;
+    height: 15px;
+    display: block;
+    float: left;
+    margin-top: 8px;
+}
+
+button.btn.btn-primary.add {}
+
+.overview-filters button.btn.btn-primary {
+    border: 1px solid;
+    width: 100px;
+    position: unset;
+    margin: 0;
+}
+
+.overview-filters button.btn.btn-primary.add .btn-txt {
+    display: block;
+    float: left;
+    width: 58px;
+    text-align: center;
+}
+.overview-tabs .tab-content>.active {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    background: #fff;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: -2px;
+    z-index: 9;
+    position: relative;
+    border-top-left-radius: 0;
+}
+.overview-tabs ul.nav.nav-tabs {
+    border: 0;
+    margin-bottom: 0px;
+}
+.table-cont.overview-tabs {
+    margin-top: 20px;
+    width: 73%;
+}
+.overview-tabs .nav-tabs>li>a {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+.action-btns.with-text .btn.btn-primary {
+    width: 76px;
+    font-size: 10px;
+}
+
+.action-btns.with-text .btn.btn-primary.view {
+    width: 53px;
+}
+
+.action-btns.with-text .btn.btn-primary.delete {
+    width: 63px;
+}
+
+w {}
+.action-btns.with-text span.btn-txt {
+    display: block;
+    float: left;
+}
+
+.action-btns.with-text span.icon {
+    float: left;
+    display: block;
+    margin-right: 1px;
+    margin-left: 0px;
+    transform: scale(.8);
+}
+
+button.btn.btn-primary .icon {}
