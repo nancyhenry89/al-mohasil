@@ -2469,7 +2469,7 @@ button.btn.btn-primary .icon {}
     float: left;
 }
 .main-su .form .social-media label {
-    width: 20%;
+    width: 25%;
     font-weight: normal;
     float: left;
     font-size: 12px;
@@ -2477,13 +2477,13 @@ button.btn.btn-primary .icon {}
 }
 
 .main-su .form .social-media input {
-    width: 80%;
+    width: 75%;
     float: left;
 }
 .social-media .title {
     font-weight: bold;
     font-size: 15px;
-    margin-top: 33px;
+    margin-bottom: 10px;
 }
 
 .main-su .form .one-row input {
@@ -2528,4 +2528,23 @@ button.btn.btn-primary.upload .icon i {
 .upload-btns button.btn.btn-primary.delete .icon {margin-right: 5px;}
 .upload-btns {
     margin-top: 15px;
+}
+
+.main-su .form .social-media .dropdown .btn {
+    width: 75%;
+    background: transparent;
+    color: #979797;
+    border: 1px solid;
+    border-radius: 4px;
+    text-align: left;
+    position: relative;
+}
+
+.main-su .form .social-media .dropdown .btn i {
+    position: absolute;
+    right: 10px;
+    font-size: 19px;
+}
+.main-su .form .social-media .dropdown.full-width .btn {
+    width: 100%;
 }

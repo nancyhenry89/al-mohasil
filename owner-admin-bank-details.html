@@ -1,6 +1,6 @@
 <html>
    <head>
-      <title>Al Mohasil- Owner Company Profile</title>
+      <title>Al Mohasil- Owner Bank details & Charges</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -30,9 +30,9 @@
                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANAGE COMPANIES</a>
                            <ul class="dropdown-menu">
                               <li><a href="owner-admin-overview.html">Overview</a></li>
-                              <li class="active"><a href="owner-admin-company-profile.html">Company Profile</a></li>
+                              <li><a href="owner-admin-company-profile.html">Company Profile</a></li>
                               <li><a href="owner-admin-manage-employees.html">Manage employees</a></li>
-                              <li><a href="owner-admin-bank-details.html">Bank details & Charges</a></li>
+                              <li class="active"><a href="owner-admin-bank-details.html">Bank details & Charges</a></li>
                               <li><a href="SU-admin-settiings-other-settings.html">Other Settings</a></li>
                            </ul>
                         </li>
@@ -61,97 +61,96 @@
          <div class="container profile">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Company Profile</h2>
+                  <h2>Bank details & Charges</h2>
                </div>
             </div>
             <div class="row form">
-
-                 <div class="col-md-12 one-row">
-                    <label>Status:</label>
-                    <form>
-                       <label class="checkbox-inline">
-                       <input type="checkbox" value="">Enable
-                       </label>
-                       <label class="checkbox-inline">
-                       <input type="checkbox" value="">Disable
-                       </label>
-                    </form>
-                 </div>
-              
                <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-12">
-                      <label>Company name:</label>
-                      <input type="text" placeholder="Company name" name="company-name"/>
+                      <label>Account Holder Name:</label>
+                      <input type="text" placeholder="Full Name" name="account-holder"/>
                     </div>
                     <div class="col-md-12">
-                      <label>Company Address:</label>
-                      <input type="text" placeholder="Address. St/ State, ZIP, Country" name="company-address"/>
+                      <label>Bank name:</label>
+                      <input type="text" placeholder="Bank name example text" name="bank-name"/>
                     </div>
                     <div class="col-md-12">
-                      <label>Contact Number:</label>
-                      <input type="text" placeholder="000-000-00-00 " name="company-name"/>
+                      <label>Branch</label>
+                      <input type="text" placeholder="Example: " name="branch"/>
                     </div>
                     <div class="col-md-12">
-                      <label>Email address:</label>
-                      <input type="text" placeholder="example@example.com" name="company-name"/>
+                      <label>Account Number:</label>
+                      <input type="text" placeholder="000000000 " name="account-number"/>
                     </div>
-                    <div class="col-md-12 logo-upload">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <label>Logo:</label>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="logo-img">
-                            <img src="assets/img/logo-tst.png"/>
-                          </div>
-                        </div>
-                        <div class="col-md-9">
-                          <div class="upload-info">
-                            Please upload the logo in 180x180px scale. Supported formats: jpg, png, gif.
-                          </div>
-                          <div class="upload-btns">
-                            <button class="btn btn-primary upload"><span class="icon"><i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-file-image-o" aria-hidden="true"></i></span><span class="btn-txt">UPLOAD IMAGE</span></button>
-                            <button class="btn btn-primary delete"><span class="icon">+</span><span class="btn-txt">DELETE IMAGE</span></button>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-md-12">
+                      <label>IBAN:</label>
+                      <input type="text" placeholder="000000000 " name="iban"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>SWIFT Code:</label>
+                      <input type="text" placeholder="000000000 " name="swift"/>
+                    </div>
 
-                    </div>
                   </div>
                </div>
                <div class="col-md-6 social-media">
                  <div class="row">
                    <div class="col-md-12">
-                     <div class="title">Social Media:</div>
+                     <div class="title">Debt Card Charges:</div>
                    </div>
                  </div>
                  <div class="row">
                    <div class="col-md-12">
-                     <label>Facebook</label>
-                     <input type="text" placeholder="http://facebook.com/examplecompany"/>
+                     <label>Percentage or Fixed:</label>
+                     <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Fixed
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Fixed</a></li>
+                           <li><a href="#">Percentage</a></li>
+                        </ul>
+                     </div>
                    </div>
                    <div class="col-md-12">
-                     <label>Twitter</label>
-                     <input type="text" placeholder="http://twitter.com/examplecompany"/>
+                     <label>Charge:</label>
+                     <input type="text" placeholder="50"/>
+                   </div>
+
+                     <div class="col-md-12">
+                       <div class="title">Credit Card Charges:</div>
+                     </div>
+
+                   <div class="col-md-12">
+                     <label>Percentage or Fixed:</label>
+                     <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Fixed
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Fixed</a></li>
+                           <li><a href="#">Percentage</a></li>
+                        </ul>
+                     </div>
                    </div>
                    <div class="col-md-12">
-                     <label>LinkedIn:</label>
-                     <input type="text" placeholder="http://linkedin.com/examplecompany"/>
+                     <label>Charge:</label>
+                     <input type="text" placeholder="50"/>
                    </div>
                    <div class="col-md-12">
-                     <label>Instagram:</label>
-                     <input type="text" placeholder="http://instagram.com/examplecompany"/>
+                     <div class="title">Change Allocation:</div>
                    </div>
                    <div class="col-md-12">
-                     <label>Youtube:</label>
-                     <input type="text" placeholder="http://youtube.com/examplecompany"/>
-                   </div>
-                   <div class="col-md-12">
-                     <label>Google Plus:</label>
-                     <input type="text" placeholder="http://plus.google.com/examplecompany"/>
+                     <div class="dropdown full-width">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Fully on customer
+                          <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                           <li><a href="#">Fully on company</a></li>
+                           <li><a href="#">Customized</a></li>
+                        </ul>
+                     </div>
                    </div>
                  </div>
                </div>
@@ -159,10 +158,12 @@
          </div>
          <div class="container settings-btns">
            <div class="row ">
-             <div class="col-md-12">
+             <div class="col-md-6">
                <button class="btn btn-primary update">UPDATE</button>
              </div>
-
+             <div class="col-md-6">
+               <button class="btn btn-primary cancel">CANCEL</button>
+             </div>
            </div>
          </div>
       </div>
