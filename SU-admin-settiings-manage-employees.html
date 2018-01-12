@@ -1,6 +1,6 @@
 <html>
    <head>
-      <title>Al Mohasil- Clients</title>
+      <title>Al Mohasil- Settings</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -9,7 +9,7 @@
       <link href="https://fonts.googleapis.com/css?family=Arimo|Open+Sans" rel="stylesheet">
    </head>
    <body>
-      <header class="su-admin-header">
+      <header class="su-admin-header settings">
          <div class="container">
             <nav class="navbar navbar-default">
                <div class="container-fluid">
@@ -26,11 +26,19 @@
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                      <ul class="nav navbar-nav">
-                        <li><a href="SU-admin-dashboard.html" >DASHBOARD <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="SU-admin-dahboard.html" >DASHBOARD <span class="sr-only">(current)</span></a></li>
                         <li><a href="SU-admin-express-invoice.html">EXPRESS INVOICE</a></li>
-                        <li class="active"><a href="SU-admin-clients.html">CLIENTS</a></li>
+                        <li><a href="SU-admin-clients.html">CLIENTS</a></li>
                         <li><a href="SU-admin-reports.html">REPORTS</a></li>
-                        <li><a href="SU-admin-settings.html">SETTINGS</a></li>
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SETTINGS</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="SU-admin-settiings-company.html">Company Profile</a></li>
+                              <li class="active"><a href="SU-admin-settiings-manage-employees.html">Manage employees</a></li>
+                              <li><a href="#">Bank details & Charges</a></li>
+                              <li><a href="#">Other Settings</a></li>
+                           </ul>
+                        </li>
                      </ul>
                      <div class="user-area">
                         <div class="user-img">
@@ -52,7 +60,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Clients</h2>
+                  <h2>Manage Employees</h2>
                </div>
             </div>
          </div>
@@ -115,7 +123,7 @@
                               <td>email@example.com</td>
                               <td>Street St 01/12 State CT</td>
                               <td class="client-status">
-                                 <button class="btn btn-primary list"><span class="icon"></span><span class="btn-txt">INVOICE LIST</span></button>
+                                 <button class="btn btn-primary reset"><i class="fa fa-lock" aria-hidden="true"></i><span class="btn-txt">Reset Password</span></button>
                                  <button class="btn btn-primary edit"><span class="icon"></span><span class="btn-txt">EDIT</span></button>
                                  <button class="btn btn-primary delete"><span class="icon"></span></button>
                               </td>
@@ -162,6 +170,17 @@
                   </div>
                </div>
             </div>
+
+         </div>
+         <div class="container settings-btns">
+           <div class="row ">
+             <div class="col-md-6">
+               <button class="btn btn-primary update">UPDATE</button>
+             </div>
+             <div class="col-md-6">
+               <button class="btn btn-primary cancel">CANCEL</button>
+             </div>
+           </div>
          </div>
       </div>
       <footer>

@@ -201,10 +201,15 @@ body{
      margin-bottom: 0;
      height: 100%;
      border: 0;
+     position: relative;
 }
  header {
      height: 72px;
      background: #1993c8;
+}
+
+header.su-admin-header.settings {
+    height: 143px;
 }
  header .navbar>.container-fluid .navbar-brand {
      width: 250px;
@@ -2135,4 +2140,106 @@ td.btns-status.credit span, td.btns-status.debit span {
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 0px 9px;
+}
+.navbar-nav>li>.dropdown-menu {
+    display: block;
+    width: 90%;
+    top: 70px;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    left: 5%;
+}
+
+.navbar-nav>li.dropdown {
+    position: unset;
+}
+
+.navbar-nav>li>.dropdown-menu li {
+    float: left;
+    width: 25%;
+}
+
+.navbar-nav>li>.dropdown-menu li a {
+    color: #6dadda;
+    text-align: center;
+}
+
+.dropdown-menu>.active {
+    position: relative;
+}
+.dropdown-menu>.active:after,.dropdown-menu>.active:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    margin-left: -12px;
+}
+.dropdown-menu>.active:after{border-color: rgba(136, 183, 213, 0);border-width: 12px;margin-right: -2px;}
+.dropdown-menu>.active:before{
+        border-color: rgba(194, 225, 245, 0);
+        border-bottom-color: #f8f8f8;
+        border-width: 14px;
+        margin-right: -4px;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover, .dropdown-menu>li>a:hover {
+    background: transparent!important;
+    color: #fff!important;
+}
+
+.navbar-nav>li>.dropdown-menu:before ,.navbar-nav>li>.dropdown-menu:after {
+	bottom: 100%;
+	right: 21%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.navbar-nav>li>.dropdown-menu:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #0050a5;
+	border-width: 12px;
+	margin-right: -2px;
+}
+.navbar-nav>li>.dropdown-menu:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #f5f7fa;
+	border-width: 14px;
+	margin-right: -4px;
+}
+button.btn.btn-primary.reset {
+    background: #F77C00;
+    border-radius: 4px;
+    height: 28px;
+}
+
+button.btn.btn-primary.reset i {
+    padding-right: 5px;
+    font-size: 17px;
+}
+.container.settings-btns {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container.settings-btns .btn {
+    width: 249px;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.container.settings-btns .btn.cancel {
+    background: #fff;
+    color: #676767;
+    border: 1px solid;
 }
