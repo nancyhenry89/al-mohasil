@@ -91,9 +91,31 @@
               <div class="col-md-9 table-cont">
                   <div class="row table-actions">
                     <div class="col-md-12">
-                     <button class="btn btn-primary down"><span class="icon"></span></button>
-                     <button class="btn btn-primary send"><span class="icon"></span></button>
-                     <button class="btn btn-primary up"><span class="icon"></span></button>
+                     <button title="Save Template" data-toggle="modal" data-target="#save-template" class="btn btn-primary down"><span class="icon"></span></button>
+                     <div class="modal fade" id="save-template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                           <div class="loginmodal-container">
+                              <h1 class="popup-title login">
+                                <span>Save template</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                              </h1>
+                              <br>
+                              <div class="popup-inner">
+                                <label class="text-left">Template name:</label>
+                                 <input id="template-name" type="text" name="template" placeholder="Example">
+                                 <div class="popup-check">
+                                    <label class="checkbox-inline"><input type="checkbox" value="">Share</label>
+                                 </div>
+                                 <input type="submit" name="submit" class="login loginmodal-submit" value="Submit">
+                                 <input type="submit" name="cancel" class="login loginmodal-submit popup-cancel" value="CANCEL">
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                     <button title="Retrieve invoice" class="btn btn-primary send"><span class="icon"></span></button>
+                     <button title="Upload invoice" class="btn btn-primary up"><span class="icon"></span></button>
                    </div>
                   </div>
                   <div class="row">
@@ -143,8 +165,106 @@
                     </div>
                   </div>
                   <div class="row invoice-btns text-right">
-                    <button class="btn btn-primary now"><span class="icon"></span><span class="btn-txt">SEND INVOICE</span></button>
-                    <button class="btn btn-primary later"><span class="icon"></span><span class="btn-txt">SEND LATER</span></button>
+                    <button data-toggle="modal" data-target="#send-invoice" class="btn btn-primary now"><span class="icon"></span><span class="btn-txt">SEND INVOICE</span></button>
+                    <div class="modal fade" id="send-invoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                       <div class="modal-dialog">
+                          <div class="loginmodal-container text-center">
+                             <h1 class="popup-title login">
+                               <span>Success</span>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                             </h1>
+                             <br>
+                             <div class="checkmark"></div>
+                             <label>Your invoice was sent</label>
+                             <p>(This window will automatically close in 3 seconds)</p>
+                          </div>
+                       </div>
+                    </div>
+
+                    <button class="btn btn-primary later" data-toggle="modal" data-target="#send-later"><span class="icon"></span><span class="btn-txt">SEND LATER</span></button>
+                    <div class="modal fade" id="send-later" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                       <div class="modal-dialog">
+                          <div class="loginmodal-container">
+                             <h1 class="popup-title login">
+                               <span>Send later</span>
+                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                   <span aria-hidden="true">&times;</span>
+                               </button>
+                             </h1>
+                             <br>
+                             <div class="popup-inner">
+                                <div class="row pop-dropdowns text-left">
+                                  <div class="col-md-6">
+                                    <div class="dropdown">
+                                       <label>Day:</label>
+                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">10</a></li>
+                                          <li><a href="#">20</a></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="dropdown">
+                                       <label>Month:</label>
+                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">10</a></li>
+                                          <li><a href="#">20</a></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row pop-dropdowns text-left">
+                                  <div class="col-md-6">
+                                    <div class="dropdown">
+                                       <label>HH:</label>
+                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">10</a></li>
+                                          <li><a href="#">20</a></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="dropdown">
+                                       <label>MM:</label>
+                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">10</a></li>
+                                          <li><a href="#">20</a></li>
+                                       </ul>
+                                       <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                         <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                       </button>
+                                       <ul class="dropdown-menu">
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">10</a></li>
+                                          <li><a href="#">20</a></li>
+                                       </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <input type="submit" name="submit" class="login loginmodal-submit" value="Submit">
+                                <input type="submit" name="cancel" class="login loginmodal-submit popup-cancel" value="CANCEL">
+                           </div>
+                          </div>
+                       </div>
+                    </div>
                   </div>
               </div>
             </div>

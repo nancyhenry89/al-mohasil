@@ -1796,7 +1796,7 @@ a.page-link.next i {
     margin: auto;
     margin-top: 27px;
 }
-.row.express-invoice input {
+.row.express-invoice form input {
     width: 100%;
     height: 37px;
     border-radius: 5px;
@@ -2643,4 +2643,20 @@ button.btn.btn-primary.add-more {
 }
 .social-media .one-row {
     margin-top: 10px;
+}
+.popup-inner {
+    padding: 20px;
+}
+input.popup-cancel {
+    background: transparent!important;
+    border: 1px solid;
+    color: #484848;
+}
+
+input.popup-cancel:hover {
+    border: 1px solid;
+}
+.popup-inner input {
+    height: 45px;
+    line-height: 15px;
 }
