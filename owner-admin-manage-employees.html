@@ -1,0 +1,219 @@
+<html>
+   <head>
+      <title>Al Mohasil- Settings</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Arimo|Open+Sans" rel="stylesheet">
+   </head>
+   <body>
+     <header class="su-admin-header settings owner">
+        <div class="container">
+           <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                 <!-- Brand and toggle get grouped for better mobile display -->
+                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home.html"><img src="assets/img/admin-logo.png"/></a>
+                 </div>
+                 <!-- Collect the nav links, forms, and other content for toggling -->
+                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                       <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANAGE COMPANIES</a>
+                          <ul class="dropdown-menu">
+                             <li><a href="owner-admin-overview.html">Overview</a></li>
+                             <li><a href="owner-admin-company-profile.html">Company Profile</a></li>
+                             <li class="active"><a href="owner-admin-manage-employees.html">Manage employees</a></li>
+                             <li><a href="#">Bank details & Charges</a></li>
+                             <li><a href="SU-admin-settiings-other-settings.html">Other Settings</a></li>
+                          </ul>
+                       </li>
+                       <li><a href="SU-admin-express-invoice.html">MASTER SETUP</a></li>
+                       <li><a href="SU-admin-clients.html">FOOTER</a></li>
+                       <li><a href="SU-admin-reports.html">HOMEPAGE</a></li>
+                       <li><a href="SU-admin-settiings-company.html">REPORTS</a></li>
+                    </ul>
+                    <div class="user-area">
+                       <div class="user-img">
+                          <img src="assets/img/user-img.png" alt="user image"/>
+                       </div>
+                       <div class="username">
+                          <span>OWNER</span>
+                          <i class="fa fa-caret-down" aria-hidden="true"></i>
+                       </div>
+                    </div>
+                 </div>
+                 <!-- /.navbar-collapse -->
+              </div>
+              <!-- /.container-fluid -->
+           </nav>
+        </div>
+     </header>
+      <div class="container-fluid main-content main-su">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2>Manage Employees</h2>
+               </div>
+            </div>
+         </div>
+         <div class="container table-cont">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="table-filters">
+                     <div class="row">
+                        <div class="col-md-6 table-search">
+                           <form class="navbar-form" role="search">
+                              <label>Search: </label>
+                              <div class="input-group add-on">
+                                 <input class="form-control" name="srch-term" id="srch-term" type="text">
+                                 <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                 </div>
+                              </div>
+                           </form>
+                         </div>
+                         <div class="col-md-2 table-dropdown">
+                           <div class="dropdown">
+                              <label>Show:</label>
+                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                 <li><a href="#">5</a></li>
+                                 <li><a href="#">10</a></li>
+                                 <li><a href="#">20</a></li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="col-md-4 add-client text-right">
+                          <button class="btn btn-primary add">
+                            <span class="icon"></span>
+                            <span>ADD CLIENT</span>
+                          </button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="tablecontent">
+                     <table class="table table-striped">
+                        <thead class="thead-light">
+                           <tr>
+                              <th scope="col"><span class="head-text">Name</span></th>
+                              <th scope="col"><span class="head-text">Mobile</span></th>
+                              <th scope="col"><span class="head-text">Email</span></th>
+                              <th scope="col"><span class="head-text">Address</span></th>
+                              <th scope="col"><span class="head-text">Options</span></th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td scope="row">User Name 1</td>
+                              <td>12345678911</td>
+                              <td>email@example.com</td>
+                              <td>Street St 01/12 State CT</td>
+                              <td class="client-status">
+                                 <button class="btn btn-primary reset"><i class="fa fa-lock" aria-hidden="true"></i><span class="btn-txt">Reset Password</span></button>
+                                 <button class="btn btn-primary edit"><span class="icon"></span><span class="btn-txt">EDIT</span></button>
+                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
+                              </td>
+                           </tr>
+                           <tr>
+                             <td scope="row">User Name 1</td>
+                             <td>12345678911</td>
+                             <td>email@example.com</td>
+                             <td>Street St 01/12 State CT</td>
+                             <td>
+                             </td>
+                           </tr>
+                           <tr>
+                             <td scope="row">User Name 1</td>
+                             <td>12345678911</td>
+                             <td>email@example.com</td>
+                             <td>Street St 01/12 State CT</td>
+                             <td>
+                             </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="table-paging">
+                     <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                           <li class="page-item disabled">
+                              <a class="page-link prev" href="#" tabindex="-1"><i class="fa fa-arrow-left" aria-hidden="true"></i>PREV</a>
+                           </li>
+                           <li class="page-item selected"><a class="page-link" href="#">1</a></li>
+                           <li class="page-item"><a class="page-link" href="#">2</a></li>
+                           <li class="page-item dots"><a class="page-link">...</a></li>
+                           <li class="page-item"><a class="page-link" href="#">9</a></li>
+                           <li class="page-item"><a class="page-link" href="#">10</a></li>
+                           <li class="page-item">
+                              <a class="page-link next" href="#">NEXT<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+         <div class="container settings-btns">
+           <div class="row ">
+             <div class="col-md-6">
+               <button class="btn btn-primary update">UPDATE</button>
+             </div>
+             <div class="col-md-6">
+               <button class="btn btn-primary cancel">CANCEL</button>
+             </div>
+           </div>
+         </div>
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="logo">
+                     <img src="assets/img/logo.png" alt="logo"/>
+                  </div>
+                  <div class="copy-rights">© 2018 AlMohasil</div>
+               </div>
+               <div class="col-md-4 footer-links">
+                  <label>COMPANY</label>
+                  <div class="links">
+                     <a href="about-us.html">About Us</a>
+                     <a href="how-it-works.html">How it works</a>
+                  </div>
+               </div>
+               <div class="col-md-5 footer-links">
+                  <label>SUPPORT</label>
+                  <div class="links">
+                     <a href="faq.html">FAQ</a>
+                     <a href="#">Support</a>
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Terms of Use</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>
