@@ -57,227 +57,123 @@
          </div>
       </header>
       <div class="container-fluid main-content main-su">
-         <div class="container dashboard">
+         <div class="container profile">
             <div class="row">
                <div class="col-md-12">
-                  <h2>Dashboard</h2>
+                  <h2>Company Profile</h2>
                </div>
             </div>
-            <div class="row dashboard-data">
-               <div class="col-md-2 signle-col part-1">
-                  <label>TRANSACTIONS</label>
-                  <div class="current">
-                     <span>CURRENT</span>
-                     <div class="figure">330</div>
-                  </div>
-                  <div class="all">
-                     <span>ALL</span>
-                     <div class="figure">500</div>
+            <div class="row form read-only">
+
+                 <div class="col-md-12 one-row">
+                    <label>Status:</label>
+                    <form>
+                       <label class="checkbox-inline">
+                       <input type="checkbox" value="">Enable
+                       </label>
+                       <label class="checkbox-inline">
+                       <input type="checkbox" value="">Disable
+                       </label>
+                    </form>
+                 </div>
+
+               <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Company name:</label>
+                      <input type="text" placeholder="Company name" name="company-name"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Company Address:</label>
+                      <input type="text" placeholder="Address. St/ State, ZIP, Country" name="company-address"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Contact Number:</label>
+                      <input type="text" placeholder="000-000-00-00 " name="company-name"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Email address:</label>
+                      <input type="text" placeholder="example@example.com" name="company-name"/>
+                    </div>
+                    <div class="col-md-12 logo-upload">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label>Logo:</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="logo-img">
+                            <img src="assets/img/logo-tst.png"/>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
                   </div>
                </div>
-               <div class="col-md-4 double-col part-2">
-                  <div class="col-cont">
-                     <label>DEBIT</label>
-                     <div class="current">
-                        <span>CURRENT</span>
-                        <div class="figure">500</div>
-                     </div>
-                     <div class="all">
-                        <span>ALL</span>
-                        <div class="figure">700</div>
-                     </div>
-                  </div>
-                  <div class="col-cont">
-                     <label>DEBIT</label>
-                     <div class="current">
-                        <span>CURRENT</span>
-                        <div class="figure">100</div>
-                     </div>
-                     <div class="all">
-                        <span>ALL</span>
-                        <div class="figure">200</div>
-                     </div>
-                  </div>
+               <div class="col-md-6 social-media">
+
+                 <div class="row">
+                 <div class="col-md-12">
+                   <div class="title">Category:</div>
+                   <input class="tags" type="text" value="Category 1" data-role="tagsinput" placeholder="" />
+                 </div>
+                 <div class="col-md-12 one-row">
+                    <div class="title">Status:</div>
+                    <form>
+                       <label class="checkbox-inline">
+                       <input type="checkbox" value="">Express Invoice
+                       </label>
+                       <label class="checkbox-inline">
+                       <input type="checkbox" value="">Direct Payment
+                       </label>
+                    </form>
+                 </div>
                </div>
-               <div class="col-md-2 signle-col part-3">
-                  <label>TOTAL VALUE</label>
-                  <div class="current">
-                     <span>CURRENT</span>
-                     <div class="figure">330</div>
-                  </div>
-                  <div class="all">
-                     <span>ALL</span>
-                     <div class="figure">500</div>
-                  </div>
-               </div>
-               <div class="col-md-4 barcode-col part-4">
-                  <label>BALANCE ON 10/12/2017 19:26</label>
-                  <div class="figure big-fig">2,000</div>
-                  <button class="btn btn-primary"><span>REQUEST TRANSFER</span></button>
+
+                 <div class="row">
+                   <div class="col-md-12">
+                     <div class="title">Social Media:</div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-md-12">
+                     <label>Facebook</label>
+                     <input type="text" placeholder="http://facebook.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Twitter</label>
+                     <input type="text" placeholder="http://twitter.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>LinkedIn:</label>
+                     <input type="text" placeholder="http://linkedin.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Instagram:</label>
+                     <input type="text" placeholder="http://instagram.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Youtube:</label>
+                     <input type="text" placeholder="http://youtube.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Google Plus:</label>
+                     <input type="text" placeholder="http://plus.google.com/examplecompany"/>
+                   </div>
+                 </div>
                </div>
             </div>
          </div>
-         <div class="container table-cont">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="table-filters">
-                     <div class="row">
-                        <div class="col-md-6 tabs">
-                           <label>view: </label>
-                           <ul class="nav nav-pills">
-                              <li class="active"><a href="#">ALL</a></li>
-                              <li><a href="#">Paid</a></li>
-                              <li><a href="#">Unpaid</a></li>
-                              <li><a href="#">Pending</a></li>
-                              <li><a href="#">Deleted</a></li>
-                           </ul>
-                        </div>
-                        <div class="col-md-4 table-search">
-                           <form class="navbar-form" role="search">
-                              <label>Search: </label>
-                              <div class="input-group add-on">
-                                 <input class="form-control" name="srch-term" id="srch-term" type="text">
-                                 <div class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                                 </div>
-                              </div>
-                           </form>
-                        </div>
-                        <div class="col-md-2 table-dropdown">
-                           <div class="dropdown">
-                              <label>Show:</label>
-                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
-                              <i class="fa fa-angle-down" aria-hidden="true"></i>
-                              </button>
-                              <ul class="dropdown-menu">
-                                 <li><a href="#">5</a></li>
-                                 <li><a href="#">10</a></li>
-                                 <li><a href="#">20</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="tablecontent">
-                     <table class="table table-striped">
-                        <thead class="thead-light">
-                           <tr>
-                              <th scope="col"><span class="head-text">Agent</span><span class="head-icon icon-down"></span></th>
-                              <th scope="col"><span class="head-text">Client</span><span class="head-icon"></span></th>
-                              <th scope="col"><span class="head-text">Phone number</span><span class="head-icon"></span></th>
-                              <th scope="col"><span class="head-text">Amount</span><span class="head-icon"></span></th>
-                              <th scope="col"><span class="head-text">Status</span><span class="head-icon"></span></th>
-                              <th scope="col"><span class="head-text">Date/Time</span><span class="head-icon"></span></th>
-                              <th scope="col"><span class="head-text">Options</span></th>
-                           </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                              <td scope="row">Agent Name</td>
-                              <td>Name Lastame</td>
-                              <td>+01-987-564-87-00</td>
-                              <td>300$</td>
-                              <td class="btns-status paid">
-                                 <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">PAID</span></button>
-                                 <button class="btn btn-primary">1</button>
-                              </td>
-                              <td>10/11/2017</td>
-                              <td class="action-btns">
-                                 <button class="btn btn-primary view"><span class="icon"></span></button>
-                                 <button class="btn btn-primary down"><span class="icon"></span></button>
-                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td scope="row">Agent Name</td>
-                              <td>Name Lastame</td>
-                              <td>+01-987-564-87-00</td>
-                              <td>300$</td>
-                              <td class="btns-status unpaid">
-                                 <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">unpaid</span></button>
-                                 <button class="btn btn-primary">1</button>
-                              </td>
-                              <td>10/11/2017</td>
-                              <td class="action-btns">
-                                 <button class="btn btn-primary view"><span class="icon"></span></button>
-                                 <button class="btn btn-primary down"><span class="icon"></span></button>
-                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td scope="row"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="btns-status deleted">
-                                 <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">deleted</span></button>
-                                 <button class="btn btn-primary">1</button>
-                              </td>
-                              <td></td>
-                              <td class="action-btns">
-                                 <button class="btn btn-primary view"><span class="icon"></span></button>
-                                 <button class="btn btn-primary down"><span class="icon"></span></button>
-                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td scope="row"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="btns-status pending">
-                                 <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">pending</span></button>
-                                 <button class="btn btn-primary">1</button>
-                              </td>
-                              <td></td>
-                              <td class="action-btns">
-                                 <button class="btn btn-primary view"><span class="icon"></span></button>
-                                 <button class="btn btn-primary down"><span class="icon"></span></button>
-                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
-                              </td>
-                           </tr>
-                           <tr>
-                              <td scope="row"></td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                              <td class="btns-status pending">
-                              </td>
-                              <td></td>
-                              <td colspan="action-btns">
-                              </td>
-                           </tr>
-                        </tbody>
-                     </table>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="table-paging">
-                     <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                           <li class="page-item disabled">
-                              <a class="page-link prev" href="#" tabindex="-1"><i class="fa fa-arrow-left" aria-hidden="true"></i>PREV</a>
-                           </li>
-                           <li class="page-item selected"><a class="page-link" href="#">1</a></li>
-                           <li class="page-item"><a class="page-link" href="#">2</a></li>
-                           <li class="page-item dots"><a class="page-link">...</a></li>
-                           <li class="page-item"><a class="page-link" href="#">9</a></li>
-                           <li class="page-item"><a class="page-link" href="#">10</a></li>
-                           <li class="page-item">
-                              <a class="page-link next" href="#">NEXT<i class="fa fa-arrow-right" aria-hidden="true"></i>
-                              </a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-            </div>
+         <div class="container settings-btns">
+           <div class="row ">
+             <div class="col-md-12">
+               <button class="btn btn-primary update">UPDATE</button>
+             </div>
+
+           </div>
          </div>
       </div>
       <footer>
@@ -311,5 +207,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
       <script src="assets/js/scripts.js"></script>
+      <script src="assets/js/tags.js"></script>
    </body>
 </html>
