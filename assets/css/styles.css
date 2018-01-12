@@ -2437,3 +2437,95 @@ w {}
 }
 
 button.btn.btn-primary .icon {}
+.main-su .form label {
+    width: 100%;
+    font-size: 15px;
+}
+
+.main-su .profile .form {
+    width: 90%;
+    margin: auto;
+    margin-top: 28px;
+    margin-bottom: 33px;
+}
+
+.main-su .form input {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 38px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid #979797;
+    padding: 0 10px;
+}
+
+.main-su .form .one-row label {
+    width: 70px;
+    float: left;
+}
+
+.main-su .form .one-row form {
+    width: 200px;
+    float: left;
+}
+.main-su .form .social-media label {
+    width: 20%;
+    font-weight: normal;
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.main-su .form .social-media input {
+    width: 80%;
+    float: left;
+}
+.social-media .title {
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 33px;
+}
+
+.main-su .form .one-row input {
+    height: 13px;
+}
+.logo-img img {
+    width: 100%;
+}
+
+.logo-upload .upload-info {
+    font-size: 12px;
+    color: #5a5a5a;
+}
+
+.upload-btns button.btn.btn-primary.upload {
+    width: calc(50% - 10px);
+    background: #E2F3FF;
+    border-radius: 4px;
+    color: #1A92C8;
+    border: 1px solid;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+button.btn.btn-primary.upload .icon {
+    margin-right: 10px;
+}
+
+button.btn.btn-primary.upload .icon i {
+    font-size: 13px;
+    padding: 0 1px;
+}
+.upload-btns button.btn.btn-primary.delete {
+    background: #ff1664;
+    width: 50%;
+    border-radius: 4px;
+    float: left;
+    height: 34px;
+}
+
+.upload-btns button.btn.btn-primary.delete .icon {margin-right: 5px;}
+.upload-btns {
+    margin-top: 15px;
+}

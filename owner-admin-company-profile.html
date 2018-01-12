@@ -1,0 +1,201 @@
+<html>
+   <head>
+      <title>Al Mohasil- Owner Company Profile</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link href="https://fonts.googleapis.com/css?family=Arimo|Open+Sans" rel="stylesheet">
+   </head>
+   <body>
+      <header class="su-admin-header settings owner">
+         <div class="container">
+            <nav class="navbar navbar-default">
+               <div class="container-fluid">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                     <a class="navbar-brand" href="home.html"><img src="assets/img/admin-logo.png"/></a>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                     <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANAGE COMPANIES</a>
+                           <ul class="dropdown-menu">
+                              <li><a href="owner-admin-overview.html">Overview</a></li>
+                              <li class="active"><a href="owner-admin-company-profile.html">Company Profile</a></li>
+                              <li><a href="SU-admin-settiings-manage-employees.html">Manage employees</a></li>
+                              <li><a href="#">Bank details & Charges</a></li>
+                              <li><a href="SU-admin-settiings-other-settings.html">Other Settings</a></li>
+                           </ul>
+                        </li>
+                        <li><a href="SU-admin-express-invoice.html">MASTER SETUP</a></li>
+                        <li><a href="SU-admin-clients.html">FOOTER</a></li>
+                        <li><a href="SU-admin-reports.html">HOMEPAGE</a></li>
+                        <li><a href="SU-admin-settiings-company.html">REPORTS</a></li>
+                     </ul>
+                     <div class="user-area">
+                        <div class="user-img">
+                           <img src="assets/img/user-img.png" alt="user image"/>
+                        </div>
+                        <div class="username">
+                           <span>OWNER</span>
+                           <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- /.navbar-collapse -->
+               </div>
+               <!-- /.container-fluid -->
+            </nav>
+         </div>
+      </header>
+      <div class="container-fluid main-content main-su">
+         <div class="container profile">
+            <div class="row">
+               <div class="col-md-12">
+                  <h2>Company Profile</h2>
+               </div>
+            </div>
+            <div class="row form">
+               <div class="col-md-6">
+                  <div class="row">
+                     <div class="col-md-12 one-row">
+                        <label>Status:</label>
+                        <form>
+                           <label class="checkbox-inline">
+                           <input type="checkbox" value="">Enable
+                           </label>
+                           <label class="checkbox-inline">
+                           <input type="checkbox" value="">Disable
+                           </label>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <label>Company name:</label>
+                      <input type="text" placeholder="Company name" name="company-name"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Company Address:</label>
+                      <input type="text" placeholder="Address. St/ State, ZIP, Country" name="company-address"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Contact Number:</label>
+                      <input type="text" placeholder="000-000-00-00 " name="company-name"/>
+                    </div>
+                    <div class="col-md-12">
+                      <label>Email address:</label>
+                      <input type="text" placeholder="example@example.com" name="company-name"/>
+                    </div>
+                    <div class="col-md-12 logo-upload">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label>Logo:</label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-3">
+                          <div class="logo-img">
+                            <img src="assets/img/logo-tst.png"/>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="upload-info">
+                            Please upload the logo in 180x180px scale. Supported formats: jpg, png, gif.
+                          </div>
+                          <div class="upload-btns">
+                            <button class="btn btn-primary upload"><span class="icon"><i class="fa fa-arrow-up" aria-hidden="true"></i><i class="fa fa-file-image-o" aria-hidden="true"></i></span><span class="btn-txt">UPLOAD IMAGE</span></button>
+                            <button class="btn btn-primary delete"><span class="icon">+</span><span class="btn-txt">DELETE IMAGE</span></button>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+               </div>
+               <div class="col-md-6 social-media">
+                 <div class="row">
+                   <div class="col-md-12">
+                     <div class="title">Social Media:</div>
+                   </div>
+                 </div>
+                 <div class="row">
+                   <div class="col-md-12">
+                     <label>Facebook</label>
+                     <input type="text" placeholder="http://facebook.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Twitter</label>
+                     <input type="text" placeholder="http://twitter.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>LinkedIn:</label>
+                     <input type="text" placeholder="http://linkedin.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Instagram:</label>
+                     <input type="text" placeholder="http://instagram.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Youtube:</label>
+                     <input type="text" placeholder="http://youtube.com/examplecompany"/>
+                   </div>
+                   <div class="col-md-12">
+                     <label>Google Plus:</label>
+                     <input type="text" placeholder="http://plus.google.com/examplecompany"/>
+                   </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+         <div class="container settings-btns">
+           <div class="row ">
+             <div class="col-md-12">
+               <button class="btn btn-primary update">UPDATE</button>
+             </div>
+
+           </div>
+         </div>
+      </div>
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="logo">
+                     <img src="assets/img/logo.png" alt="logo"/>
+                  </div>
+                  <div class="copy-rights">© 2018 AlMohasil</div>
+               </div>
+               <div class="col-md-4 footer-links">
+                  <label>COMPANY</label>
+                  <div class="links">
+                     <a href="about-us.html">About Us</a>
+                     <a href="how-it-works.html">How it works</a>
+                  </div>
+               </div>
+               <div class="col-md-5 footer-links">
+                  <label>SUPPORT</label>
+                  <div class="links">
+                     <a href="faq.html">FAQ</a>
+                     <a href="#">Support</a>
+                     <a href="#">Privacy Policy</a>
+                     <a href="#">Terms of Use</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script src="assets/js/scripts.js"></script>
+   </body>
+</html>
