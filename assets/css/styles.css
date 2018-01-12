@@ -2548,3 +2548,13 @@ button.btn.btn-primary.upload .icon i {
 .main-su .form .social-media .dropdown.full-width .btn {
     width: 100%;
 }
+.container.bus-partners .col-md-6 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+button.btn.btn-primary.add-more {
+    background: #46A1E1;
+    border-radius: 4px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
