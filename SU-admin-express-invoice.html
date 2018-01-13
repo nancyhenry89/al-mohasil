@@ -91,6 +91,7 @@
               <div class="col-md-9 table-cont">
                   <div class="row table-actions">
                     <div class="col-md-12">
+                       <!--Save Template popup start-->
                      <button title="Save Template" data-toggle="modal" data-target="#save-template" class="btn btn-primary down"><span class="icon"></span></button>
                      <div class="modal fade" id="save-template" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
                         <div class="modal-dialog">
@@ -114,8 +115,55 @@
                            </div>
                         </div>
                      </div>
-                     <button title="Retrieve invoice" class="btn btn-primary send"><span class="icon"></span></button>
-                     <button title="Upload invoice" class="btn btn-primary up"><span class="icon"></span></button>
+                    <!--retrieve Save Template popup end-->
+                     <!--retrieve invoice popup start-->
+                     <button title="Retrieve invoice" data-toggle="modal" data-target="#retrieve-invoice" class="btn btn-primary send"><span class="icon"></span></button>
+                     <div class="modal fade" id="retrieve-invoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                           <div class="loginmodal-container">
+                              <h1 class="popup-title login">
+                                <span>Retrive an invoice</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                              </h1>
+                              <br>
+                              <div class="popup-inner">
+                                <label class="text-center"><label>You’ve registered as:</label></label>
+                                 <div class="ret-cont">
+                                   <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">Invoice template 1</span></button>
+                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">Invoice template 2</span></button>
+                                     <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">Invoice template 3</span></button>
+                                      <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">Invoice template 4</span></button>
+                                 </div>
+                                 <a class="link">Show more</a>
+                                 <input data-dismiss="modal" type="submit" name="ok" class="login loginmodal-submit popup-cancel" value="OK">
+
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                      <!--retrieve invoice popup end-->
+                     <!--upload invoice popup start-->
+                     <button title="Upload invoice" data-toggle="modal" data-target="#Upload-invoice" class="btn btn-primary up"><span class="icon"></span></button>
+                     <div class="modal fade" id="Upload-invoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog">
+                           <div class="loginmodal-container">
+                              <h1 class="popup-title login">
+                                <span>Invoices</span>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                              </h1>
+                              <br>
+                              <div class="popup-inner">
+                                <label class="text-center"><label>You’ve registered as:</label></label>
+                                 <input data-dismiss="modal" type="submit" name="ok" class="login loginmodal-submit popup-cancel" value="OK">
+                            </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--upload invoice popup end-->
                    </div>
                   </div>
                   <div class="row">

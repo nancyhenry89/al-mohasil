@@ -428,3 +428,34 @@ input.popup-cancel:hover{border:1px solid}
 .pop-dropdowns{margin-bottom:15px}
 .pop-dropdowns .two label{width:20%}
 .pop-dropdowns .two .btn{width:37%;margin-left:3%}
+.table-actions .ret-cont button.btn.btn-primary {
+    color: #484848;
+    border: 1px solid!important;
+    width: 100%;
+    background: transparent;
+    height: 45px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.table-actions .ret-cont button.btn.btn-primary .icon {
+    position: absolute;
+    right: 10px;
+    background: #FF0467;
+    height: 30px;
+    top: 7px;
+    border-radius: 5px;
+}
+
+.table-actions .ret-cont button.btn.btn-primary .icon:before {
+    background-image: url(../img/table-icons.png);
+    content: '';
+    width: 25px;
+    height: 21px;
+    display: block;
+    background-position: 1px -45px;
+    background-size: 23px;
+    margin-left: 2px;
+    margin-top: 4px;
+}
