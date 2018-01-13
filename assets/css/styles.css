@@ -60,8 +60,6 @@ button.btn.btn-primary:hover{background-image:-webkit-gradient(linear,left botto
 .row.about-vision{margin:auto;margin-top:30px;float:left;width:95%;left:5%;position:relative}
 .row.about-vision>div{padding:60px 6px;height:420px;margin-bottom:63px;transition:all .5s ease}
 .about-vision .title{font-size:16px;font-weight:bolder;letter-spacing:1px;margin-top:24px;background:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#053c9c),color-stop(2,#159dbe));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-.about-vision p{font-size:16px;font-weight:700;color:#4A4A4A;width:80%;text-align:left;margin:0;letter-spacing:.7px;margin-top:14px}
-.about-vision button.btn.btn-primary{position:relative;width:86px;height:35px;margin:auto;background:#fff;color:#515151;padding:0;font-size:12px;text-align:left;line-height:30px;padding:0 15px;opacity:0;margin-top:58px;margin-left:-16px}
 .about-vision button.btn.btn-primary i{background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FF0468 0%,#FC7637 100%);border-radius:50%;color:#fff;width:16px;height:16px;font-size:10px;line-height:15px;position:absolute;right:6px;top:9px;text-align:center}
 .about-vision button.btn.btn-primary:after{position:absolute;top:-2px;bottom:-2px;left:-2px;right:-2px;content:'';z-index:-1;border-radius:25px;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FF0468 0%,#FC7637 100%)}
 .row.about-vision>div:hover{box-shadow:0 4px 6px 0 rgba(0,0,0,0),0 5px 10px 0 rgba(0,0,0,0.19);padding-left:46px;padding-top:50px}
@@ -111,8 +109,6 @@ footer .container{padding-top:20px}
 .input-email span{background-position:-0 -20px;width:19px;height:12px;top:11px}
 .text-area span{background-position:-0 -32px;width:18px;height:20px;top:20px}
 .partner-item{height:170px}
-.how-content .icon{display:inline-block;background:url(../img/how-it-works.png) no-repeat;overflow:hidden;text-indent:-9999px;text-align:left;width:80px;height:80px;background-size:160px}
-.how-content .icon.icon-1{background-position:-0 -0}
 .how-content .icon.icon-2{background-position:-80px -0}
 .how-content .icon.icon-3{background-position:-0 -80px}
 .how-content .icon.icon-4{background-position:-80px -80px}
@@ -125,16 +121,10 @@ footer .container{padding-top:20px}
 .main-banner button.btn.btn-primary{width:270px;height:50px;font-size:18px}
 .main-banner p{font-size:18px;letter-spacing:1px;width:550px;margin-top:17px;margin-bottom:42px}
 .main-banner .row{padding-left:72px;padding-top:15px}
-.about-content,.how-content{color:#272626}
 .about-content h3{font-size:31px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center}
 .how-content h2{font-size:34px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center;margin-top:44px}
-.about-content p{font-size:18px;font-weight:700;padding-left:60px;line-height:23px;letter-spacing:1.2px;margin-bottom:20px;word-spacing:.5px}
-.about-img{padding-left:60px;width:100%;margin-bottom:38px}
 .about-img img{width:100%}
-.how-content label{font-size:18px;width:100%;letter-spacing:1px}
-.how-content p{letter-spacing:1.5px;font-size:13px}
 .how-content .content{margin-bottom:51px}
-.faq-content{padding:0 70px;color:#4b4b4b;font-weight:700}
 .faq-item label{font-size:18px}
 .faq-item p{padding-left:22px;font-size:17px;font-weight:400;letter-spacing:1px}
 .faq-item{margin-bottom:15px}
@@ -524,7 +514,6 @@ button.btn.btn-primary:focus{outline:none}
 button.btn.btn-primary:hover{background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#FF0468),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FC7637 0%,#ff1364 100%)}
 .main a.angel-down{left:50%;position:relative;margin-left:-15px;margin-top:82px}
 .what h3{color:#484848}
-.what p{width:90%;margin:auto;text-align:center;font-size:14px;font-weight:700;line-height:22px;word-spacing:4px}
 .row.about-vision{margin:auto;margin-top:30px;float:left;width:95%;left:5%;position:relative}
 .row.about-vision>div{padding:60px 6px;height:420px;margin-bottom:63px;transition:all .5s ease}
 .about-vision .title{font-size:16px;font-weight:bolder;letter-spacing:1px;margin-top:24px;background:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#053c9c),color-stop(2,#159dbe));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
@@ -546,8 +535,6 @@ button.btn.btn-primary:hover{background-image:-webkit-gradient(linear,left botto
 .input-email span{background-position:-0 -20px;width:19px;height:12px;top:11px}
 .text-area span{background-position:-0 -32px;width:18px;height:20px;top:20px}
 .partner-item{height:170px}
-.how-content .icon{display:inline-block;background:url(../img/how-it-works.png) no-repeat;overflow:hidden;text-indent:-9999px;text-align:left;width:80px;height:80px;background-size:160px}
-.how-content .icon.icon-1{background-position:-0 -0}
 .how-content .icon.icon-2{background-position:-80px -0}
 .how-content .icon.icon-3{background-position:-0 -80px}
 .how-content .icon.icon-4{background-position:-80px -80px}
@@ -556,23 +543,16 @@ button.btn.btn-primary:hover{background-image:-webkit-gradient(linear,left botto
 .how-content .icon.icon-7{background-position:-0 -240px}
 .how-content .icon.icon-8{background-position:-80px -240px}
 .main-banner{height:333px;padding:0;background:url(../img/how-banner.png);background-size:cover;color:#fff}
-.main-banner h2{font-size:39px}
 .main-banner button.btn.btn-primary{width:270px;height:50px;font-size:18px}
 .main-banner p{font-size:18px;letter-spacing:1px;width:550px;margin-top:17px;margin-bottom:42px}
-.about-content,.how-content{color:#272626}
 .about-content h3{font-size:31px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center}
 .how-content h2{font-size:34px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center;margin-top:44px}
-.about-content p{font-size:18px;font-weight:700;padding-left:60px;line-height:23px;letter-spacing:1.2px;margin-bottom:20px;word-spacing:.5px}
-.about-img{padding-left:60px;width:100%;margin-bottom:38px}
 .about-img img{width:100%}
-.how-content label{font-size:18px;width:100%;letter-spacing:1px}
 .how-content p{letter-spacing:1.5px;font-size:13px}
 .how-content .content{margin-bottom:51px}
-.faq-content{padding:0 70px;color:#4b4b4b;font-weight:700}
 .faq-item label{font-size:18px}
 .faq-item p{padding-left:22px;font-size:17px;font-weight:400;letter-spacing:1px}
 .faq-item{margin-bottom:15px}
-.loginmodal-container{max-width:350px;width:100%!important;background-color:#F7F7F7;margin:0 auto;border-radius:2px;box-shadow:0 2px 2px rgba(0,0,0,0.3);overflow:hidden}
 .loginmodal-container input[type=submit][disabled=disabled]{background:#DEDEDE}
 .loginmodal-container input[type=submit]{width:100%;display:block;margin-bottom:10px;position:relative;font-size:16px;border-radius:5px;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FF0468 0%,#FC7637 100%)}
 .loginmodal-container input[type=text]:hover,input[type=password]:hover{border:1px solid #b9b9b9;border-top:1px solid #a0a0a0;-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
@@ -876,8 +856,6 @@ label .optional {
 .input-email span{background-position:-0 -20px;width:19px;height:12px;top:11px}
 .text-area span{background-position:-0 -32px;width:18px;height:20px;top:20px}
 .partner-item{height:170px}
-.how-content .icon{display:inline-block;background:url(../img/how-it-works.png) no-repeat;overflow:hidden;text-indent:-9999px;text-align:left;width:80px;height:80px;background-size:160px}
-.how-content .icon.icon-1{background-position:-0 -0}
 .how-content .icon.icon-2{background-position:-80px -0}
 .how-content .icon.icon-3{background-position:-0 -80px}
 .how-content .icon.icon-4{background-position:-80px -80px}
@@ -886,23 +864,15 @@ label .optional {
 .how-content .icon.icon-7{background-position:-0 -240px}
 .how-content .icon.icon-8{background-position:-80px -240px}
 .main-banner{height:333px;padding:0;background:url(../img/how-banner.png);background-size:cover;color:#fff}
-.main-banner h2{font-size:39px}
 .main-banner button.btn.btn-primary{width:270px;height:50px;font-size:18px}
 .main-banner p{font-size:18px;letter-spacing:1px;width:550px;margin-top:17px;margin-bottom:42px}
-.about-content,.how-content{color:#272626}
 .about-content h3{font-size:31px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center}
 .how-content h2{font-size:34px;font-weight:700;margin-bottom:43px;line-height:43px;text-align:center;margin-top:44px}
-.about-content p{font-size:18px;font-weight:700;padding-left:60px;line-height:23px;letter-spacing:1.2px;margin-bottom:20px;word-spacing:.5px}
-.about-img{padding-left:60px;width:100%;margin-bottom:38px}
 .about-img img{width:100%}
-.how-content label{font-size:18px;width:100%;letter-spacing:1px}
-.how-content p{letter-spacing:1.5px;font-size:13px}
 .how-content .content{margin-bottom:51px}
-.faq-content{padding:0 70px;color:#4b4b4b;font-weight:700}
 .faq-item label{font-size:18px}
 .faq-item p{padding-left:22px;font-size:17px;font-weight:400;letter-spacing:1px}
 .faq-item{margin-bottom:15px}
-.loginmodal-container{max-width:350px;width:100%!important;background-color:#F7F7F7;margin:0 auto;border-radius:2px;box-shadow:0 2px 2px rgba(0,0,0,0.3);overflow:hidden}
 .loginmodal-container input[type=submit][disabled=disabled]{background:#DEDEDE}
 .loginmodal-container input[type=submit]{width:100%;display:block;margin-bottom:10px;position:relative;font-size:16px;border-radius:5px;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FF0468 0%,#FC7637 100%)}
 .loginmodal-container input[type=text]:hover,input[type=password]:hover{border:1px solid #b9b9b9;border-top:1px solid #a0a0a0;-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
@@ -1131,7 +1101,6 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .how-content .icon.icon-7{background-position:-0 -240px}
 .how-content .icon.icon-8{background-position:-80px -240px}
 .main-banner{height:333px;padding:0;background:url(../img/how-banner.png);background-size:cover;color:#fff}
-.main-banner h2{font-size:39px}
 .main-banner button.btn.btn-primary{width:270px;height:50px;font-size:18px}
 .main-banner p{font-size:18px;letter-spacing:1px;width:550px;margin-top:17px;margin-bottom:42px}
 .about-content,.how-content{color:#272626}
@@ -1141,13 +1110,11 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .about-img{padding-left:60px;width:100%;margin-bottom:38px}
 .about-img img{width:100%}
 .how-content label{font-size:18px;width:100%;letter-spacing:1px}
-.how-content p{letter-spacing:1.5px;font-size:13px}
 .how-content .content{margin-bottom:51px}
 .faq-content{padding:0 70px;color:#4b4b4b;font-weight:700}
 .faq-item label{font-size:18px}
 .faq-item p{padding-left:22px;font-size:17px;font-weight:400;letter-spacing:1px}
 .faq-item{margin-bottom:15px}
-.loginmodal-container{max-width:350px;width:100%!important;background-color:#F7F7F7;margin:0 auto;border-radius:2px;box-shadow:0 2px 2px rgba(0,0,0,0.3);overflow:hidden}
 .loginmodal-container input[type=submit][disabled=disabled]{background:#DEDEDE}
 .loginmodal-container input[type=submit]{width:100%;display:block;margin-bottom:10px;position:relative;font-size:16px;border-radius:5px;background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));background-image:-o-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:-ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);background-image:linear-gradient(to right,#FF0468 0%,#FC7637 100%)}
 .loginmodal-container input[type=text]:hover,input[type=password]:hover{border:1px solid #b9b9b9;border-top:1px solid #a0a0a0;-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}
@@ -1607,4 +1574,251 @@ footer.invoice-footer .logo img {
 .invoice-footer .copy-rights {
     margin-left: 0;
     font-size: 17px;
+}
+@media only screen and (max-width: 1024px){
+  .main p{
+    width: 100%;
+  }
+  .navbar-default .navbar-toggle .icon-bar{
+      background: white;
+  }
+  header .navbar>.container-fluid .navbar-brand {
+    margin-left: 0;
+    padding-top: 8px;
+}
+
+.main .logo {
+    margin-top: 50px;
+}
+
+.main h2 {
+    font-size: 36px;
+}
+
+.row.about-vision>div {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    height: 330px;
+    text-align: center;
+}
+
+.about-vision p {width: 100%;text-align: center;}
+
+.row.about-vision>div:hover {
+    padding-left: 0;
+    padding-top: 0;
+    box-shadow:  none;
+}
+
+.row.about-vision>div:hover button.btn.btn-primary {
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.about-vision button.btn.btn-primary {
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.how {
+    height: 710px;
+}
+
+.how *:after,.how *:before {
+    display: none!important;
+}
+
+.icon {
+    margin-top: 20px;
+}
+.container h3 {
+}
+
+.benifit {
+    margin-bottom: 10px;
+}
+
+.support>div {
+    width: 100%;
+}
+
+.up-to-date {
+    height: 320px;
+}
+
+.up-to-date h2 {
+    margin-top: 70px;
+    margin-left: 0;
+}
+
+.up-to-date button.btn.btn-primary {
+    margin-top: 40px;
+    margin-left: 0;
+}
+
+.contact-form {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact-form input {
+    margin-top: 19px;
+}
+
+.contact-details {
+    margin-top: 10px;
+}
+
+.contact-details label {
+    float: left;
+    width: 28%;
+}
+
+.contact-details .detail {
+    margin-bottom: 5px;
+    float: left;
+    width: 72%;
+}
+
+.row.social {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-details .social .social-item {
+    width: calc(100% / 3);
+    margin: 0;
+}
+.col-md-4.footer-links {
+    padding-left: 10px;
+}
+
+.links a {
+    width: auto;
+    margin-right: 20px;
+}
+
+.footer-links label {
+    width: 100%;
+    text-align: left;
+}
+
+footer .container {
+    padding-top: 0;
+}
+.carousel-control.right {
+    display: none;
+}
+
+a.left.carousel-control {
+    display: none;
+}
+.navbar-default .navbar-collapse {
+    /* margin-left: 0; */
+    /* background: #0c518d; */
+    /* z-index: 9; */
+    /* position: relative; */
+    /* margin-top: 0; */
+    /* border: 1px solid #fff; */
+    /* border-radius: 7px; */
+    width: 100%;
+    float: right;
+}
+
+.main-banner .row {
+    padding-left: 0;
+}
+
+.main-banner p {
+    width: 100%;
+    text-align: center;
+}
+
+.main-banner h2 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.main-banner button.btn.btn-primary {
+    width: 100%;
+}
+
+.about-content p {
+    padding-left: 0;
+}
+
+.about-img {
+    padding-left: 0;
+}
+.faq-content {
+    padding: 0 20px;
+}
+.how-content *:after,.how-content *:before {
+    display: none!important;
+}
+
+.how-content .icon {
+    position: relative;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: 0;
+}
+
+.how-content label {
+    text-align: center;
+}
+
+.how-content p {
+    text-align: center;
+}
+.modal-backdrop.in {
+    display: none;
+}
+.loginmodal-container {
+    max-width: 80%;
+}
+footer {
+    height: 350px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+footer .logo img {width: 160px;}
+
+footer .logo {
+    margin-top: 50px;
+    margin-left: 0;
+}
+
+.copy-rights {
+    margin-left: 0;
+}
+.how a.link {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.how a.link i {
+    display: none;
+}
+.contact {
+    margin-bottom: 0px;
+    padding-bottom: 250px;
+}
+}
+@media only screen and (max-width: 767px){
+    .navbar-default .navbar-collapse {
+    margin-left: 0;
+    background: #0c518d;
+    z-index: 9;
+    position: relative;
+    margin-top: 0;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    width: 100%;
+    float: none;
+}
 }
