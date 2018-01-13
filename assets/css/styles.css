@@ -2686,3 +2686,32 @@ input.popup-cancel:hover {
 .overview-filters {
     padding-right: 0;
 }
+
+.pop-dropdowns .btn {
+    width: 55%;
+    background: #fff!important;
+    color: #333333;
+    float: left;
+    border: 1px solid #333333!important;
+    border-radius: 5px!important;
+}
+
+.pop-dropdowns label {
+    float: left;
+    width: 45%;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.pop-dropdowns {
+    margin-bottom: 15px;
+}
+.pop-dropdowns .two label {
+    width: 20%;
+}
+
+.pop-dropdowns .two .btn {
+    width: 37%;
+    margin-left: 3%;
+}
