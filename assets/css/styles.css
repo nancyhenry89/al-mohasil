@@ -2322,7 +2322,7 @@ button.btn.btn-primary.reset i {
 }
 
 .overview-filters button.btn.btn-primary.dropdown-toggle {
-    width: 76%;
+    width: 52%;
     position: relative;
     margin-left: 1%;
     border-radius: 4px;
@@ -2331,6 +2331,7 @@ button.btn.btn-primary.reset i {
     left: auto;
     text-align: left;
     color: #515151;
+    font-size: 12px;
 }
 
 .overview-filters button.btn.btn-primary.dropdown-toggle i {
@@ -2390,7 +2391,7 @@ button.btn.btn-primary.add {}
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     background: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin-bottom: 20px;
     margin-top: -2px;
     z-index: 9;
@@ -2670,4 +2671,19 @@ input.popup-cancel:hover {
     border-radius: 4px;
     border-color: #979797;
     margin-bottom: 10px;
+}
+
+.col-md-6 .row>div {
+    padding: 0;
+}
+
+.overview-filters label {
+    font-size: 12px;
+}
+.overview-filters .row>div {
+    padding-right: 0;
+}
+
+.overview-filters {
+    padding-right: 0;
 }
