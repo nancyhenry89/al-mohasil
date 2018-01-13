@@ -716,52 +716,6 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .form-cont.settings .dropdown .btn{width:100%;border-radius:4px;background:#fff;color:#979797;border:1px solid;text-align:left}
 .form-cont.settings .dropdown .btn i{right:20px;position:absolute;font-size:19px}
 .form-cont.settings textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.container.form-cont.settings{margin-bottom:30px}
-.owner .navbar-nav>li.active>a:before,.owner .navbar-nav>li.active>a:after{bottom:-18%;left:36%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;z-index:2}
-.owner .navbar-nav>li.active>a:after{border-color:rgba(136,183,213,0);border-bottom-color:#0050a5;border-width:12px;margin-left:-2px}
-.owner .navbar-nav>li.active>a:before{border-color:rgba(194,225,245,0);border-bottom-color:#f5f7fa;border-width:14px;margin-left:-4px}
-.owner .navbar-nav>li>.dropdown-menu li{width:20%}
-.row.overview-filters{width:92%;margin:auto;margin-top:20px;padding:10px;padding-right:27px}
-.overview-filters button.btn.btn-primary.dropdown-toggle{width:52%;position:relative;margin-left:1%;border-radius:4px;background:#fff!important;border:1px solid;left:auto;text-align:left;color:#515151;font-size:12px}
-.overview-filters button.btn.btn-primary.dropdown-toggle i{position:absolute;right:19px;font-size:19px;top:7px}
-.overview-filters button.btn.btn-primary.add{background:#46A1E1!important;color:#fff}
-.overview-filters button.btn.btn-primary.add .icon{font-size:22px;width:20px;display:inline-block;margin-left:-10px;margin-top:-1px;display:block;float:left}
-.overview-filters button.btn.btn-primary.edit{background:#22B88D!important;color:#fff}
-.overview-filters button.btn.btn-primary.edit .icon{background-image:url(../img/table-icons.png);border-radius:4px;display:inline-block;background-position:1px 206px;background-size:17px;width:19px;height:15px;display:block;float:left;margin-top:8px}
-.overview-filters button.btn.btn-primary{border:1px solid;width:100px;position:unset;margin:0}
-.overview-filters button.btn.btn-primary.add .btn-txt{display:block;float:left;width:58px;text-align:center}
-.overview-tabs .tab-content>.active{box-shadow:0 4px 6px 0 rgba(0,0,0,0),0 5px 10px 0 rgba(0,0,0,0.19);border-radius:5px;background:#fff;padding:10px;margin-bottom:20px;margin-top:-2px;z-index:9;position:relative;border-top-left-radius:0}
-.overview-tabs ul.nav.nav-tabs{border:0;margin-bottom:0}
-.table-cont.overview-tabs{margin-top:20px;width:73%}
-.overview-tabs .nav-tabs>li>a{color:#4a4a4a;font-weight:700}
-.action-btns.with-text .btn.btn-primary{width:76px;font-size:10px}
-.action-btns.with-text .btn.btn-primary.view{width:53px}
-.action-btns.with-text .btn.btn-primary.delete{width:63px}
-.action-btns.with-text span.btn-txt{display:block;float:left}
-.action-btns.with-text span.icon{float:left;display:block;margin-right:1px;margin-left:0;transform:scale(.8)}
-
-input.popup-cancel{background:transparent!important;border:1px solid;color:#484848}
-input.popup-cancel:hover{border:1px solid}
-.popup-inner input{height:45px;line-height:15px}
-.text-area textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.overview-filters label{font-size:12px}
-.overview-filters .row>div{padding-right:0}
-.overview-filters{padding-right:0}
-.pop-dropdowns .btn{width:55%;background:#fff!important;color:#333;float:left;border:1px solid #333!important;border-radius:5px!important}
-.pop-dropdowns label{float:left;width:45%;font-weight:400;font-size:14px;line-height:30px}
-.pop-dropdowns{margin-bottom:15px}
-.pop-dropdowns .two label{width:20%}
-.pop-dropdowns .two .btn{width:37%;margin-left:3%}
-.table-actions .ret-cont button.btn.btn-primary {
-    color: #484848;
-    border: 1px solid!important;
-    width: 100%;
-    background: transparent;
-    height: 45px;
-    margin: 0;
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .table-actions .ret-cont button.btn.btn-primary .icon {
     position: absolute;
@@ -1090,52 +1044,6 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .form-cont.settings .dropdown .btn{width:100%;border-radius:4px;background:#fff;color:#979797;border:1px solid;text-align:left}
 .form-cont.settings .dropdown .btn i{right:20px;position:absolute;font-size:19px}
 .form-cont.settings textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.container.form-cont.settings{margin-bottom:30px}
-.owner .navbar-nav>li.active>a:before,.owner .navbar-nav>li.active>a:after{bottom:-18%;left:36%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;z-index:2}
-.owner .navbar-nav>li.active>a:after{border-color:rgba(136,183,213,0);border-bottom-color:#0050a5;border-width:12px;margin-left:-2px}
-.owner .navbar-nav>li.active>a:before{border-color:rgba(194,225,245,0);border-bottom-color:#f5f7fa;border-width:14px;margin-left:-4px}
-.owner .navbar-nav>li>.dropdown-menu li{width:20%}
-.row.overview-filters{width:92%;margin:auto;margin-top:20px;padding:10px;padding-right:27px}
-.overview-filters button.btn.btn-primary.dropdown-toggle{width:52%;position:relative;margin-left:1%;border-radius:4px;background:#fff!important;border:1px solid;left:auto;text-align:left;color:#515151;font-size:12px}
-.overview-filters button.btn.btn-primary.dropdown-toggle i{position:absolute;right:19px;font-size:19px;top:7px}
-.overview-filters button.btn.btn-primary.add{background:#46A1E1!important;color:#fff}
-.overview-filters button.btn.btn-primary.add .icon{font-size:22px;width:20px;display:inline-block;margin-left:-10px;margin-top:-1px;display:block;float:left}
-.overview-filters button.btn.btn-primary.edit{background:#22B88D!important;color:#fff}
-.overview-filters button.btn.btn-primary.edit .icon{background-image:url(../img/table-icons.png);border-radius:4px;display:inline-block;background-position:1px 206px;background-size:17px;width:19px;height:15px;display:block;float:left;margin-top:8px}
-.overview-filters button.btn.btn-primary{border:1px solid;width:100px;position:unset;margin:0}
-.overview-filters button.btn.btn-primary.add .btn-txt{display:block;float:left;width:58px;text-align:center}
-.overview-tabs .tab-content>.active{box-shadow:0 4px 6px 0 rgba(0,0,0,0),0 5px 10px 0 rgba(0,0,0,0.19);border-radius:5px;background:#fff;padding:10px;margin-bottom:20px;margin-top:-2px;z-index:9;position:relative;border-top-left-radius:0}
-.overview-tabs ul.nav.nav-tabs{border:0;margin-bottom:0}
-.table-cont.overview-tabs{margin-top:20px;width:73%}
-.overview-tabs .nav-tabs>li>a{color:#4a4a4a;font-weight:700}
-.action-btns.with-text .btn.btn-primary{width:76px;font-size:10px}
-.action-btns.with-text .btn.btn-primary.view{width:53px}
-.action-btns.with-text .btn.btn-primary.delete{width:63px}
-.action-btns.with-text span.btn-txt{display:block;float:left}
-.action-btns.with-text span.icon{float:left;display:block;margin-right:1px;margin-left:0;transform:scale(.8)}
-
-input.popup-cancel{background:transparent!important;border:1px solid;color:#484848}
-input.popup-cancel:hover{border:1px solid}
-.popup-inner input{height:45px;line-height:15px}
-.text-area textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.overview-filters label{font-size:12px}
-.overview-filters .row>div{padding-right:0}
-.overview-filters{padding-right:0}
-.pop-dropdowns .btn{width:55%;background:#fff!important;color:#333;float:left;border:1px solid #333!important;border-radius:5px!important}
-.pop-dropdowns label{float:left;width:45%;font-weight:400;font-size:14px;line-height:30px}
-.pop-dropdowns{margin-bottom:15px}
-.pop-dropdowns .two label{width:20%}
-.pop-dropdowns .two .btn{width:37%;margin-left:3%}
-.table-actions .ret-cont button.btn.btn-primary {
-    color: #484848;
-    border: 1px solid!important;
-    width: 100%;
-    background: transparent;
-    height: 45px;
-    margin: 0;
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .table-actions .ret-cont button.btn.btn-primary .icon {
     position: absolute;
@@ -1393,52 +1301,6 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .form-cont.settings .dropdown .btn{width:100%;border-radius:4px;background:#fff;color:#979797;border:1px solid;text-align:left}
 .form-cont.settings .dropdown .btn i{right:20px;position:absolute;font-size:19px}
 .form-cont.settings textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.container.form-cont.settings{margin-bottom:30px}
-.owner .navbar-nav>li.active>a:before,.owner .navbar-nav>li.active>a:after{bottom:-18%;left:36%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;z-index:2}
-.owner .navbar-nav>li.active>a:after{border-color:rgba(136,183,213,0);border-bottom-color:#0050a5;border-width:12px;margin-left:-2px}
-.owner .navbar-nav>li.active>a:before{border-color:rgba(194,225,245,0);border-bottom-color:#f5f7fa;border-width:14px;margin-left:-4px}
-.owner .navbar-nav>li>.dropdown-menu li{width:20%}
-.row.overview-filters{width:92%;margin:auto;margin-top:20px;padding:10px;padding-right:27px}
-.overview-filters button.btn.btn-primary.dropdown-toggle{width:52%;position:relative;margin-left:1%;border-radius:4px;background:#fff!important;border:1px solid;left:auto;text-align:left;color:#515151;font-size:12px}
-.overview-filters button.btn.btn-primary.dropdown-toggle i{position:absolute;right:19px;font-size:19px;top:7px}
-.overview-filters button.btn.btn-primary.add{background:#46A1E1!important;color:#fff}
-.overview-filters button.btn.btn-primary.add .icon{font-size:22px;width:20px;display:inline-block;margin-left:-10px;margin-top:-1px;display:block;float:left}
-.overview-filters button.btn.btn-primary.edit{background:#22B88D!important;color:#fff}
-.overview-filters button.btn.btn-primary.edit .icon{background-image:url(../img/table-icons.png);border-radius:4px;display:inline-block;background-position:1px 206px;background-size:17px;width:19px;height:15px;display:block;float:left;margin-top:8px}
-.overview-filters button.btn.btn-primary{border:1px solid;width:100px;position:unset;margin:0}
-.overview-filters button.btn.btn-primary.add .btn-txt{display:block;float:left;width:58px;text-align:center}
-.overview-tabs .tab-content>.active{box-shadow:0 4px 6px 0 rgba(0,0,0,0),0 5px 10px 0 rgba(0,0,0,0.19);border-radius:5px;background:#fff;padding:10px;margin-bottom:20px;margin-top:-2px;z-index:9;position:relative;border-top-left-radius:0}
-.overview-tabs ul.nav.nav-tabs{border:0;margin-bottom:0}
-.table-cont.overview-tabs{margin-top:20px;width:73%}
-.overview-tabs .nav-tabs>li>a{color:#4a4a4a;font-weight:700}
-.action-btns.with-text .btn.btn-primary{width:76px;font-size:10px}
-.action-btns.with-text .btn.btn-primary.view{width:53px}
-.action-btns.with-text .btn.btn-primary.delete{width:63px}
-.action-btns.with-text span.btn-txt{display:block;float:left}
-.action-btns.with-text span.icon{float:left;display:block;margin-right:1px;margin-left:0;transform:scale(.8)}
-
-input.popup-cancel{background:transparent!important;border:1px solid;color:#484848}
-input.popup-cancel:hover{border:1px solid}
-.popup-inner input{height:45px;line-height:15px}
-.text-area textarea{width:100%;height:80px;border-radius:4px;border-color:#979797;margin-bottom:10px}
-.overview-filters label{font-size:12px}
-.overview-filters .row>div{padding-right:0}
-.overview-filters{padding-right:0}
-.pop-dropdowns .btn{width:55%;background:#fff!important;color:#333;float:left;border:1px solid #333!important;border-radius:5px!important}
-.pop-dropdowns label{float:left;width:45%;font-weight:400;font-size:14px;line-height:30px}
-.pop-dropdowns{margin-bottom:15px}
-.pop-dropdowns .two label{width:20%}
-.pop-dropdowns .two .btn{width:37%;margin-left:3%}
-.table-actions .ret-cont button.btn.btn-primary {
-    color: #484848;
-    border: 1px solid!important;
-    width: 100%;
-    background: transparent;
-    height: 45px;
-    margin: 0;
-    position: relative;
-    margin-bottom: 10px;
-}
 
 .table-actions .ret-cont button.btn.btn-primary .icon {
     position: absolute;
