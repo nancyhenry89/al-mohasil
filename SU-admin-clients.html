@@ -86,11 +86,89 @@
                            </div>
                         </div>
                         <div class="col-md-4 add-client text-right">
-                          <button class="btn btn-primary add">
+                          <button class="btn btn-primary add" data-toggle="modal" data-target="#add-client" >
                             <span class="icon"></span>
                             <span>ADD CLIENT</span>
                           </button>
                         </div>
+                        <!--Add Client popup start-->
+                      <div class="modal fade" id="add-client" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                         <div class="modal-dialog">
+                            <div class="loginmodal-container">
+                               <h1 class="popup-title login">
+                                 <span>Add Client</span>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                 </button>
+                               </h1>
+                               <br>
+                               <div class="popup-inner">
+                                 <label class="text-left">Client name:</label>
+                                 <input type="text" name="name" placeholder="Name Lastname">
+                                  <label class="text-left">Mobile number:</label>
+                                   <input type="text" name="mobile" placeholder="000-000-00-00">
+                                   <label class="text-left">Email address:<span class="optional">(optional)</span></label>
+                                    <input type="text" name="name" placeholder="example@example.com">
+                                    <label class="text-left">Address:<span class="optional">(optional)</span></label>
+                                     <input type="text" name="name" placeholder="Address">
+                                  <input type="submit" name="submit" class="login loginmodal-submit" value="Submit">
+                             </div>
+                            </div>
+                         </div>
+                      </div>
+                     <!--Add Client popup end-->
+                     <!--Edit Client popup start-->
+                   <div class="modal fade" id="edit-client" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                      <div class="modal-dialog">
+                         <div class="loginmodal-container">
+                            <h1 class="popup-title login">
+                              <span>Edit Client</span>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                            </h1>
+                            <br>
+                            <div class="popup-inner">
+                              <label class="text-left">Client name:</label>
+                              <input type="text" name="name" placeholder="Name Lastname">
+                               <label class="text-left">Mobile number:</label>
+                                <input type="text" name="mobile" placeholder="000-000-00-00">
+                                <label class="text-left">Email address:<span class="optional">(optional)</span></label>
+                                 <input type="text" name="name" placeholder="example@example.com">
+                                 <label class="text-left">Address:<span class="optional">(optional)</span></label>
+                                  <input type="text" name="name" placeholder="Address">
+                               <input type="submit" name="submit" class="login loginmodal-submit" value="Submit">
+                          </div>
+                         </div>
+                      </div>
+                   </div>
+                  <!--Edit Client popup end-->
+                  <!--Delete Client popup start-->
+                <div class="modal fade" id="delete-client" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                   <div class="modal-dialog">
+                      <div class="loginmodal-container">
+                         <h1 class="popup-title login">
+                           <span>Delete Client</span>
+                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                               <span aria-hidden="true">&times;</span>
+                           </button>
+                         </h1>
+                         <br>
+                         <div class="popup-inner">
+                           <div class="excl">
+                             <i class="fa fa-exclamation-triangle"></i>
+                           </div>
+                           <p>Are you sure?</p>
+                           <label>Name lastname </label>
+                           <p>will be removed</p>
+                           <p>from your client’s list</p>
+                           <input data-dismiss="modal" type="submit" name="cancel" class="login loginmodal-submit popup-cancel" value="CANCEL">
+                            <input type="submit" name="submit" class="login loginmodal-submit" value="Submit">
+                       </div>
+                      </div>
+                   </div>
+                </div>
+               <!--Delete Client popup end-->
                      </div>
                   </div>
                </div>
@@ -116,8 +194,8 @@
                               <td>Street St 01/12 State CT</td>
                               <td class="client-status">
                                  <button class="btn btn-primary list"><span class="icon"></span><span class="btn-txt">INVOICE LIST</span></button>
-                                 <button class="btn btn-primary edit"><span class="icon"></span><span class="btn-txt">EDIT</span></button>
-                                 <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                 <button class="btn btn-primary edit" data-toggle="modal" data-target="#edit-client"><span class="icon"></span><span class="btn-txt">EDIT</span></button>
+                                 <button class="btn btn-primary delete"data-toggle="modal" data-target="#delete-client"><span class="icon"></span></button>
                               </td>
                            </tr>
                            <tr>
