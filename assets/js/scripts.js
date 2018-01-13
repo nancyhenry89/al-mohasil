@@ -3,6 +3,10 @@ $(function() {
     e.preventDefault();
     $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
   });
+  $(document).ready( function() {
+    $("#txtEditor").Editor();
+    });
+
 });
 (function() {
     $('#login-modal input').keyup(function(){

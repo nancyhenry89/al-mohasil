@@ -2147,7 +2147,7 @@ td.btns-status.credit span, td.btns-status.debit span {
     background-repeat: no-repeat;
     background-position: 0px 9px;
 }
-.navbar-nav>li>.dropdown-menu {
+.navbar-nav>li.active>.dropdown-menu {
     display: block;
     width: 90%;
     top: 70px;
@@ -2157,6 +2157,7 @@ td.btns-status.credit span, td.btns-status.debit span {
     padding-top: 20px;
     border-top: 1px solid #fff;
     left: 5%;
+    z-index: 1;
 }
 
 .navbar-nav>li.dropdown {
@@ -2199,7 +2200,7 @@ td.btns-status.credit span, td.btns-status.debit span {
     color: #fff!important;
 }
 
-.navbar-nav>li>.dropdown-menu:before ,.navbar-nav>li>.dropdown-menu:after {
+.navbar-nav>li.active>a:before, .navbar-nav>li.active>a:after {
 	bottom: 100%;
 	right: 21%;
 	border: solid transparent;
@@ -2215,7 +2216,7 @@ td.btns-status.credit span, td.btns-status.debit span {
 	border-width: 12px;
 	margin-right: -2px;
 }
-.navbar-nav>li>.dropdown-menu:before {
+.navbar-nav>li.active:before {
 	border-color: rgba(194, 225, 245, 0);
 	border-bottom-color: #f5f7fa;
 	border-width: 14px;
@@ -2286,8 +2287,8 @@ button.btn.btn-primary.reset i {
 .container.form-cont.settings {
     margin-bottom: 30px;
 }
-.owner .navbar-nav>li>.dropdown-menu:before,.owner .navbar-nav>li>.dropdown-menu:after {
-    bottom: 100%;
+.owner .navbar-nav>li.active>a:before, .owner .navbar-nav>li.active>a:after {
+    bottom: -18%;
     left: 36%;
     border: solid transparent;
     content: " ";
@@ -2295,16 +2296,17 @@ button.btn.btn-primary.reset i {
     width: 0;
     position: absolute;
     pointer-events: none;
+    z-index: 2;
 }
 
-.owner .navbar-nav>li>.dropdown-menu:after {
+.owner .navbar-nav>li.active>a:after {
     border-color: rgba(136, 183, 213, 0);
     border-bottom-color: #0050a5;
     border-width: 12px;
     margin-left: -2px;
 }
 
-.owner .navbar-nav>li>.dropdown-menu:before {
+.owner .navbar-nav>li.active>a:before {
     border-color: rgba(194, 225, 245, 0);
     border-bottom-color: #f5f7fa;
     border-width: 14px;
