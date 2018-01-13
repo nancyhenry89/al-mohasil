@@ -2673,9 +2673,6 @@ input.popup-cancel:hover {
     margin-bottom: 10px;
 }
 
-.col-md-6 .row>div {
-    padding: 0;
-}
 
 .overview-filters label {
     font-size: 12px;
