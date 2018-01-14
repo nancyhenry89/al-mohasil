@@ -1589,6 +1589,13 @@ footer.invoice-footer .logo img {
 .main-su .form .ckeckbox-cont label {
     width: 50%;
 }
+.popup-inner {
+    overflow: scroll;
+}
+
+.container.table-cont {
+    min-width: 1173;
+}
 @media only screen and (max-width: 1024px){
     .su-admin-header .navbar-default .navbar-collapse {
     margin-left: 0;
