@@ -298,9 +298,8 @@ td span.plus{background-image:-webkit-gradient(linear,left bottom,right bottom,c
 .reports-data button.btn.btn-primary.dropdown-toggle{border-radius:5px;margin-left:10px;background:#fff;color:#676767;border:1px solid;text-align:left;position:relative;float:right;width:99px;font-size:12px;height:35px}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
-.Reports-data .table-search label{width:auto}
+.Reports-data .table-search label{width: 100%;}
 .Reports-data .table-search form.navbar-form{padding-left:0}
-.Reports-data .table-search .input-group.add-on{width:86%}
 .row.Reports-data{width:90%;margin:auto;margin-top:10px}
 .reports h2{margin-top:38px;text-align:right;margin-right:-40px}
 .header-btn button.btn.btn-primary{width:248px;position:relative;background-color:transparent!important;color:#515151;padding:0;font-size:15px;text-align:center;line-height:30px;padding:0 15px;height:35px;background:url(../img/btn-bg.png);background-size:230px;background-repeat:no-repeat;padding:0;background-position:10px;margin-top:34px}
@@ -399,7 +398,7 @@ input.popup-cancel:hover{border:1px solid}
 .overview-filters .row>div{padding-right:0}
 .overview-filters{padding-right:0}
 .pop-dropdowns .btn{width:55%;background:#fff!important;color:#333;float:left;border:1px solid #333!important;border-radius:5px!important}
-.pop-dropdowns label{float:left;width:45%;font-weight:400;font-size:14px;line-height:30px}
+.pop-dropdowns label{float:left;width: 35%;font-weight:400;font-size:14px;line-height:30px;}
 .pop-dropdowns{margin-bottom:15px}
 .pop-dropdowns .two label{width:20%}
 .pop-dropdowns .two .btn{width:37%;margin-left:3%}
@@ -653,9 +652,7 @@ td.btns-status.credit span,td.btns-status.debit span{float:none}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
-.Reports-data .table-search label{width:auto}
 .Reports-data .table-search form.navbar-form{padding-left:0}
-.Reports-data .table-search .input-group.add-on{width:86%}
 .row.Reports-data{width:90%;margin:auto;margin-top:10px}
 .reports h2{margin-top:38px;text-align:right;margin-right:-40px}
 .header-btn button.btn.btn-primary{width:248px;position:relative;background-color:transparent!important;color:#515151;padding:0;font-size:15px;text-align:center;line-height:30px;padding:0 15px;height:35px;background:url(../img/btn-bg.png);background-size:230px;background-repeat:no-repeat;padding:0;background-position:10px;margin-top:34px}
@@ -958,9 +955,7 @@ a.page-link.next i{position:absolute;right:13px;top:9px}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
-.Reports-data .table-search label{width:auto}
 .Reports-data .table-search form.navbar-form{padding-left:0}
-.Reports-data .table-search .input-group.add-on{width:86%}
 .row.Reports-data{width:90%;margin:auto;margin-top:10px}
 .reports h2{margin-top:38px;text-align:right;margin-right:-40px}
 .header-btn button.btn.btn-primary{width:248px;position:relative;background-color:transparent!important;color:#515151;padding:0;font-size:15px;text-align:center;line-height:30px;padding:0 15px;height:35px;background:url(../img/btn-bg.png);background-size:230px;background-repeat:no-repeat;padding:0;background-position:10px;margin-top:34px}
@@ -1199,9 +1194,8 @@ a.page-link.next i{position:absolute;right:13px;top:9px}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
-.Reports-data .table-search label{width:auto}
 .Reports-data .table-search form.navbar-form{padding-left:0}
-.Reports-data .table-search .input-group.add-on{width:86%}
+.Reports-data .table-search .input-group.add-on{width:86%;margin-left: 0;}
 .row.Reports-data{width:90%;margin:auto;margin-top:10px}
 .reports h2{margin-top:38px;text-align:right;margin-right:-40px}
 .header-btn button.btn.btn-primary{width:248px;position:relative;background-color:transparent!important;color:#515151;padding:0;font-size:15px;text-align:center;line-height:30px;padding:0 15px;height:35px;background:url(../img/btn-bg.png);background-size:230px;background-repeat:no-repeat;padding:0;background-position:10px;margin-top:34px}
@@ -1582,8 +1576,18 @@ footer.invoice-footer .logo img {
     width: 75%;
 }
 
+.pop-dropdowns .dropdown-cont .dropdown {
+    width: 65%;
+}
+
 .dropdown-cont .dropdown button.btn.btn-primary {
     width: 100%!important;
+}
+.reports-data .dropdown-cont label {
+    width: 100%;
+}
+.main-su .form .ckeckbox-cont label {
+    width: 50%;
 }
 @media only screen and (max-width: 1024px){
   .main p{
