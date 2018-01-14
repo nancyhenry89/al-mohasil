@@ -142,9 +142,6 @@ footer .container{padding-top:20px}
 .loginmodal-container form{padding:20px;margin:0}
 .loginmodal-container label.checkbox-inline{text-align:center;width:100%;margin-top:10px;margin-bottom:20px;font-size:16px;color:#4A4A4A}
 .popup-label{color:#fff;font-size:20px;text-align:center;margin-bottom:30px;margin-top:90px}
-.how-content .icon:before{content:' ';border:2px dashed #fe375e;position:absolute;height:32px;display:block;left:54px;top:94px}
-.how-content .icon:after{content:' ';border:2px solid #fd7038;width:10px;position:absolute;height:1px;right:37px;top:126px}
-.how-content .col-md-1:before{content:' ';border:2px solid #fe1f60;width:10px;position:absolute;height:1px;right:37px;top:92px}
 .how-content .row:last-of-type .col-md-1:before,.how-content .row:last-of-type .col-md-1 .icon:before,.how-content .row:last-of-type .col-md-1 .icon:after{display:none}
 .loginmodal-container p{padding:10px 20px}
 .loginmodal-container label{font-size:16px;width:100%}
@@ -564,9 +561,6 @@ button.btn.btn-primary:hover{background-image:-webkit-gradient(linear,left botto
 .loginmodal-container form{padding:20px;margin:0}
 .loginmodal-container label.checkbox-inline{text-align:center;width:100%;margin-top:10px;margin-bottom:20px;font-size:16px;color:#4A4A4A}
 .popup-label{color:#fff;font-size:20px;text-align:center;margin-bottom:30px;margin-top:90px}
-.how-content .icon:before{content:' ';border:2px dashed #fe375e;position:absolute;height:32px;display:block;left:54px;top:94px}
-.how-content .icon:after{content:' ';border:2px solid #fd7038;width:10px;position:absolute;height:1px;right:37px;top:126px}
-.how-content .col-md-1:before{content:' ';border:2px solid #fe1f60;width:10px;position:absolute;height:1px;right:37px;top:92px}
 .how-content .row:last-of-type .col-md-1:before,.how-content .row:last-of-type .col-md-1 .icon:before,.how-content .row:last-of-type .col-md-1 .icon:after{display:none}
 .loginmodal-container p{padding:10px 20px}
 .auth-failed .popup-title.login{background:red}
@@ -1094,6 +1088,38 @@ button.btn.btn-primary.reset i{padding-right:5px;font-size:17px}
 .how-content .icon.icon-6{background-position:-80px -160px}
 .how-content .icon.icon-7{background-position:-0 -240px}
 .how-content .icon.icon-8{background-position:-80px -240px}
+.how-link {
+    position: relative;
+    z-index: 99999;
+    border: 2px dashed #fe375e;
+    position: absolute;
+    height: 32px;
+    display: block;
+    left: 54px;
+    top: 94px;
+}
+
+.how-link:before {
+    content: ' ';
+    display: block;
+    border: 2px solid #fe1f60;
+    width: 12px;
+    position: absolute;
+    height: 1px;
+    left: -6px;
+    top: -6px;
+}
+
+.how-link:after {
+    content: '';
+    display: block;
+    border: 2px solid #fd7038;
+    width: 12px;
+    position: absolute;
+    height: 1px;
+    left: -6px;
+    top: 30px;
+}
 .main-banner{height:333px;padding:0;background:url(../img/how-banner.png);background-size:cover;color:#fff}
 .main-banner button.btn.btn-primary{width:270px;height:50px;font-size:18px}
 .main-banner p{font-size:18px;letter-spacing:1px;width:550px;margin-top:17px;margin-bottom:42px}
