@@ -1590,6 +1590,42 @@ footer.invoice-footer .logo img {
     width: 50%;
 }
 @media only screen and (max-width: 1024px){
+    .su-admin-header .navbar-default .navbar-collapse {
+    margin-left: 0;
+}
+
+.su-admin-header .navbar-nav>li.dropdown {
+    position: relative;
+}
+
+.su-admin-header .navbar-nav>li.active>.dropdown-menu {
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    /*display: none;*/
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 100%;
+    z-index:99999
+}
+
+.su-admin-header .navbar-nav>li>.dropdown-menu li {
+    width: inherit;
+}
+
+.su-admin-header .navbar-nav>li.active>.dropdown-menu *:after,.su-admin-header .navbar-nav>li.active>.dropdown-menu *:before {
+    display: none!important;
+}
+
+.su-admin-header .dropdown-menu>.active>a, .su-admin-header .dropdown-menu>.active>a:focus, .su-admin-header .dropdown-menu>.active>a:hover, .su-admin-header .dropdown-menu>li>a:hover {
+    background: #126ab5!important;
+}
   .main p{
     width: 100%;
   }
