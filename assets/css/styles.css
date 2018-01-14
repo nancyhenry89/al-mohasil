@@ -789,9 +789,10 @@ div#invoices-list {
 
 #invoices-list .table-filters label {
     float: left;
-    width: 25%;
+    width: auto;
     font-size: 13px;
     line-height: 38px;
+    margin-right: 20px;
 }
 
 #invoices-list .table-filters input {
@@ -1332,7 +1333,7 @@ div#invoices-list {
 
 
 #invoices-list .table-filters input {
-    width: 75%;
+    width: 65%;
     height: 34px;
 }
 
