@@ -258,7 +258,7 @@ ul.nav.nav-pills{margin:0}
 input#srch-term{border-right:0}
 button.btn.btn-default .glyphicon{transform:scaleX(-1);-moz-transform:scaleX(-1);-webkit-transform:scaleX(-1);-ms-transform:scaleX(-1)}
 .table-search form.navbar-form{margin-top:0;width:100%}
-.table-dropdown button.btn.btn-primary{width:90px;border-radius:5px;margin-left:10px;background:#fff;color:#676767;border:1px solid;text-align:left}
+.table-dropdown button.btn.btn-primary{width:90px;border-radius:5px;margin-left: 0px;background: #fff!important;color:#676767;border:1px solid;text-align:left;}
 .nav-pills>li:first-of-type a{border-top-left-radius:5px;border-bottom-left-radius:5px}
 .overview-tabs li.active a,.nav-tabs>li.active>a,.overview-tabs .nav-tabs>li.active>a:focus,.overview-tabs .nav-tabs>li.active>a:hover{box-shadow:0 4px 6px 0 rgba(0,0,0,0),0 1px 10px 0 rgba(0,0,0,0.19);border:0;font-weight:700}
 .nav-pills>li:last-of-type a{border-top-right-radius:5px;border-bottom-right-radius:5px}
@@ -370,7 +370,7 @@ button.btn.btn-primary.upload .icon i{font-size:13px;padding:0 1px}
 .upload-btns button.btn.btn-primary.delete{background:#ff1664;width:50%;border-radius:4px;float:left;height:34px}
 .upload-btns button.btn.btn-primary.delete .icon{margin-right:5px}
 .upload-btns{margin-top:15px}
-.main-su .form .social-media .dropdown .btn{width:75%;background:transparent;color:#979797;border:1px solid;border-radius:4px;text-align:left;position:relative}
+.main-su .form .social-media .dropdown .btn{width:75%;background:transparent;color:#979797;border:1px solid;border-radius:4px;text-align:left;position:relative;}
 .main-su .form .social-media .dropdown .btn i{position:absolute;right:10px;font-size:19px}
 .main-su .form .social-media .dropdown.full-width .btn{width:100%}
 .container.bus-partners .col-md-6{margin-bottom:10px;margin-top:10px}
@@ -651,7 +651,6 @@ td.btns-status.credit .btn{background:#03A678;text-align:center!important;width:
 td.btns-status.credit span,td.btns-status.debit span{float:none}
 .tablecontent .btns-status.completed button.btn.btn-primary:first-of-type{background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#FFD33E),color-stop(1,#FF8200));background-image:-o-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-moz-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-webkit-linear-gradient(right,#FFD33E,#FF8200 100%);background-image:-ms-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:linear-gradient(to right,#FFD33E 0%,#FF8200 100%)}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
-.reports-data button.btn.btn-primary.dropdown-toggle{border-radius:5px;margin-left:10px;background:#fff;color:#676767;border:1px solid;text-align:left;position:relative;float:right;width:99px;font-size:12px;height:35px}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
 .Reports-data .table-search label{width:auto}
@@ -957,7 +956,6 @@ a.page-link.next i{position:absolute;right:13px;top:9px}
 
 .tablecontent .btns-status.completed button.btn.btn-primary:first-of-type{background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#FFD33E),color-stop(1,#FF8200));background-image:-o-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-moz-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-webkit-linear-gradient(right,#FFD33E,#FF8200 100%);background-image:-ms-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:linear-gradient(to right,#FFD33E 0%,#FF8200 100%)}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
-.reports-data button.btn.btn-primary.dropdown-toggle{border-radius:5px;margin-left:10px;background:#fff;color:#676767;border:1px solid;text-align:left;position:relative;float:right;width:99px;font-size:12px;height:35px}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
 .Reports-data .table-search label{width:auto}
@@ -1199,7 +1197,6 @@ a.page-link.next i{position:absolute;right:13px;top:9px}
 
 .tablecontent .btns-status.completed button.btn.btn-primary:first-of-type{background-image:-webkit-gradient(linear,left bottom,right bottom,color-stop(0,#FFD33E),color-stop(1,#FF8200));background-image:-o-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-moz-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:-webkit-linear-gradient(right,#FFD33E,#FF8200 100%);background-image:-ms-linear-gradient(right,#FFD33E 0%,#FF8200 100%);background-image:linear-gradient(to right,#FFD33E 0%,#FF8200 100%)}
 .tablecontent .btns-status.completed button.btn.btn-primary .icon{background-size:19px!important;background-position:1px -134px;height: 17px;}
-.reports-data button.btn.btn-primary.dropdown-toggle{border-radius:5px;margin-left:10px;background:#fff;color:#676767;border:1px solid;text-align:left;position:relative;float:right;width:99px;font-size:12px;height:35px}
 .reports-data button.btn.btn-primary.dropdown-toggle i{position:absolute;right:6px;font-size:16px}
 .Reports-data label{width:auto;float:left;font-size:13px;font-weight:400;display:inline-block;line-height:40px}
 .Reports-data .table-search label{width:auto}
@@ -1574,6 +1571,19 @@ footer.invoice-footer .logo img {
 .invoice-footer .copy-rights {
     margin-left: 0;
     font-size: 17px;
+}
+.dropdown-cont label {
+    float: left;
+    line-height: 30px;
+}
+
+.dropdown-cont .dropdown {
+    float: left;
+    width: 75%;
+}
+
+.dropdown-cont .dropdown button.btn.btn-primary {
+    width: 100%!important;
 }
 @media only screen and (max-width: 1024px){
   .main p{
