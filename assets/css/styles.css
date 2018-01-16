@@ -1500,15 +1500,17 @@ label .optional {
     color: #0f78b5;
     font-weight: bold;
     float: left;
-    width: 50%;
+    width: 60%;
+    height: 40px;
 }
 
 .invoice-charges .value {
     font-size: 21px;
     font-weight: bold;
-    width: 50%;
+    width: 40%;
     float: left;
     text-align: right;
+    height: 40px;
 }
 
 .invoice-bank label {
