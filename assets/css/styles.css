@@ -1624,6 +1624,12 @@ footer.invoice-footer .logo img {
     min-width: 1173;
 }
 @media only screen and (max-width: 1024px){
+  .digitilize button.btn.btn-primary span {
+    background-image: none;
+    color: red;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: #ff417c;
+}
     .su-admin-header .navbar-default .navbar-collapse {
     margin-left: 0;
 }
