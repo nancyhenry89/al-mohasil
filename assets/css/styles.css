@@ -1433,18 +1433,26 @@ label .optional {
     margin-bottom: 10px;
 }
 .invoice-logo img {
-    width: 45%;
-    margin: 50px auto;
+    width: 200px;
     display: block;
+    left: 50%;
+    position: relative;
+    margin-left: -97px;
+    margin-top: 31px;
 }
 
 .mobile-invoice .main-banner {
     height: 200px;
 }
 
-.invoice-logo {
+.mobile-invoice .main-banner .container {
 }
 
+.invoice-logo {
+}
+.mobile-invoice .container {
+    max-width: 600px;
+}
 .mobile-invoice h3 {
     width: 100%;
     font-size: 25px;
@@ -1533,8 +1541,10 @@ label .optional {
     width: 100%;
 }
 .invoice-pay button.btn.btn-primary span {
+    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#fe185e),color-stop(2,#fd6242));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
-    color: #ff0c66;
 }
 .invoice-pay button.btn.btn-primary {
     width: 100%;
@@ -1559,7 +1569,7 @@ label .optional {
 footer.invoice-footer {}
 
 footer.invoice-footer {
-    height: 140px;
+    height: 130px;
     padding-top: 0;
     background: #ff0c66;
     text-align: center;
@@ -1567,6 +1577,7 @@ footer.invoice-footer {
 
 .main-content.mobile-invoice {
     margin-bottom: 130px;
+    /* max-width: 600px; */
 }
 
 footer.invoice-footer .logo {
@@ -1780,11 +1791,8 @@ footer.invoice-footer .logo img {
     width: calc(100% / 3);
     margin: 0;
 }
-.footer-links {
-    padding-left: 10px!important;
-    width: 50%;
-    float: left;
-    margin-top: 30px;
+.col-md-4.footer-links {
+    padding-left: 10px;
 }
 
 .links a {
