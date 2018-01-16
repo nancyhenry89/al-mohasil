@@ -1541,10 +1541,11 @@ label .optional {
     width: 100%;
 }
 .invoice-pay button.btn.btn-primary span {
-    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#fe185e),color-stop(2,#fd6242));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#fe185e),color-stop(2,#fd6242)); */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
     font-weight: 700;
+    color: #ff0c66;
 }
 .invoice-pay button.btn.btn-primary {
     width: 100%;
