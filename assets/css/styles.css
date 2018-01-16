@@ -1796,11 +1796,13 @@ footer.invoice-footer .logo img {
     padding-left: 10px!important;
     width: 50%;
     float: left;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .links a {
     width: auto;
     margin-right: 20px;
+    width: 100%;
+    text-align: left;
 }
 
 .footer-links label {
@@ -1892,7 +1894,7 @@ footer {
 footer .logo img {width: 160px;}
 
 footer .logo {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 0;
 }
 
