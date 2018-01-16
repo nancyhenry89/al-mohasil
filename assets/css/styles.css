@@ -1533,10 +1533,8 @@ label .optional {
     width: 100%;
 }
 .invoice-pay button.btn.btn-primary span {
-    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#fe185e),color-stop(2,#fd6242));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 700;
+    color: #ff0c66;
 }
 .invoice-pay button.btn.btn-primary {
     width: 100%;
@@ -1561,7 +1559,7 @@ label .optional {
 footer.invoice-footer {}
 
 footer.invoice-footer {
-    height: 130px;
+    height: 140px;
     padding-top: 0;
     background: #ff0c66;
     text-align: center;
@@ -1572,7 +1570,7 @@ footer.invoice-footer {
 }
 
 footer.invoice-footer .logo {
-    margin-top: 0;
+    margin-top: 20px;
     margin-left: 0;
 }
 
