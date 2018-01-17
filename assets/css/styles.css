@@ -271,7 +271,7 @@ a.page-link.next i{position:absolute;right:13px;top:9px}
 .row.express-invoice form input{width:100%;height:37px;border-radius:5px;border:1px solid #979797;margin-bottom:8px}
 .row.express-invoice input[type="checkbox"]{width:30px;height:15px}
 .express-invoice label{font-weight:700}
-.table-actions{text-align:right;margin-bottom:17px}
+.table-actions{text-align:right;margin-bottom:17px;position: absolute;top: -120px;right: 30px;}
 .table-actions button.btn.btn-primary.invoice-action{border-radius:5px!important;height:36px;width:36px;background:#1481b9;margin-left:4px;padding:6px 7px}
 .table-actions button.btn.btn-primary.up{padding:6px 5px}
 .table-actions button.btn.btn-primary.send{padding:6px 4px}
@@ -1634,6 +1634,22 @@ footer.invoice-footer .logo img {
 
 .container.table-cont {
     min-width: 1173;
+}
+.form .express-check-box .ckeckbox-cont label {
+    width: 100px;
+}
+button#upload-invoice-btn {
+    background-image: -webkit-gradient(linear,left bottom,right bottom,color-stop(0,#ff0c66),color-stop(1,#FC7637));
+    background-image: -o-linear-gradient(right,#FF0468 0%,#FC7637 100%);
+    background-image: -moz-linear-gradient(right,#FF0468 0%,#FC7637 100%);
+    background-image: -webkit-linear-gradient(right,#FF0468 0%,#FC7637 100%);
+    background-image: -ms-linear-gradient(right,#FF0468 0%,#FC7637 100%);
+    background-image: linear-gradient(to right,#FF0468 0%,#FC7637 100%);
+    border: 0;
+    width: 130px;
+    border-radius: 30px!important;
+    margin-top: -135px;
+    margin-right: -108px;
 }
 @media only screen and (max-width: 1024px){
   .digitilize button.btn.btn-primary span {
