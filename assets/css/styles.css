@@ -230,6 +230,10 @@ button.btn.btn-primary.down .icon{background-position:2px 83px;background-size:2
 button.btn.btn-primary.delete .icon{background-image:url(../img/table-icons.png);border-radius:4px;display:inline-block;background-position:1px 300px;background-size:19px;width:20px;height:17px}
 button.btn.btn-primary.view{background:#319EF4}
 button.btn.btn-primary.delete{background:#000}
+
+.special-delete button.btn.btn-primary.delete {
+    background: #ff0366;
+}
 button.btn.btn-primary.down{background:#1EAB94}
 span.head-icon.icon-down{width:20px;height:13px;background-position:1px -30px;background-size:22px}
 span.head-icon{display:block;float:right;width:20px;height:15px;background:url(../img/table-icons.png);background-position:-1px 0;background-size:22px}
