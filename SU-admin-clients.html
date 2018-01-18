@@ -194,7 +194,198 @@
                               <td>email@example.com</td>
                               <td>Street St 01/12 State CT</td>
                               <td class="client-status">
-                                 <button class="btn btn-primary list"><span class="icon"></span><span class="btn-txt">INVOICE LIST</span></button>
+                                 <!--upload invoice popup start-->
+                                 <button class="btn btn-primary list" data-toggle="modal" data-target="#invoices-list"><span class="icon"></span><span class="btn-txt">INVOICE LIST</span></button>
+                                 <div class="modal fade" id="invoices-list" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                                    <div class="modal-dialog">
+                                       <div class="loginmodal-container">
+                                          <h1 class="popup-title login">
+                                            <span>Invoices</span>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                          </h1>
+                                          <br>
+                                          <div class="popup-inner">
+                                            <div class="container table-cont">
+                                               <div class="row">
+                                                  <div class="col-md-12">
+                                                    <div class="table-filters">
+                                                       <div class="row">
+                                                          <div class="col-md-5">
+                                                            <label>Compnay Name:</label>
+                                                            <input type="text" name="company"/>
+                                                          </div>
+                                                          <div class="col-md-3 table-dropdown dropdown-cont">
+                                                            <label>Show:</label>
+                                                            <div class="dropdown">
+
+                                                               <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">5
+                                                               <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                                               </button>
+                                                               <ul class="dropdown-menu">
+                                                                  <li><a href="#">5</a></li>
+                                                                  <li><a href="#">10</a></li>
+                                                                  <li><a href="#">20</a></li>
+                                                               </ul>
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-md-4 create-invoice">
+                                                            <button class="btn btn-primary"><span class="icon"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span><span>Create Invoice</span></button>
+
+                                                          </div>
+                                                       </div>
+                                                    </div>
+                                                  </div>
+                                               </div>
+                                               <div class="row">
+                                                  <div class="col-md-12">
+                                                     <div class="tablecontent">
+                                                        <table class="table table-striped">
+                                                           <thead class="thead-light">
+                                                              <tr>
+                                                                 <th scope="col"><span class="head-text">Company</span><span class="head-icon icon-down"></span></th>
+                                                                 <th scope="col"><span class="head-text">Agent</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Client</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Phone number</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Amount</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Payment mtd.</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Status</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Date/Time</span><span class="head-icon"></span></th>
+                                                                 <th scope="col"><span class="head-text">Options</span></th>
+                                                              </tr>
+                                                           </thead>
+                                                           <tbody>
+                                                              <tr>
+                                                                 <td>Company</td>
+                                                                 <td>Agent Name</td>
+                                                                 <td>Name Lastame</td>
+                                                                 <td>+01-987-564-87-00</td>
+                                                                 <td>300$</td>
+                                                                 <td class="btns-status debit">
+                                                                    <button class="btn btn-primary"><span class="btn-txt">Debit</span></button>
+                                                                 </td>
+                                                                 <td class="btns-status paid">
+                                                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">PAID</span></button>
+                                                                    <button class="btn btn-primary">1</button>
+                                                                 </td>
+                                                                 <td>10/11/2017</td>
+                                                                 <td class="action-btns">
+                                                                    <button class="btn btn-primary view"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary down"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                                                 </td>
+                                                              </tr>
+                                                              <tr>
+                                                                 <td>Company</td>
+                                                                 <td>Agent Name</td>
+                                                                 <td>Name Lastame</td>
+                                                                 <td>+01-987-564-87-00</td>
+                                                                 <td>300$</td>
+                                                                 <td class="btns-status credit">
+                                                                    <button class="btn btn-primary"><span class="btn-txt">Credit</span></button>
+                                                                 </td>
+                                                                 <td class="btns-status unpaid">
+                                                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">UNPAID</span></button>
+                                                                    <button class="btn btn-primary">1</button>
+                                                                 </td>
+                                                                 <td>10/11/2017</td>
+                                                                 <td class="action-btns">
+                                                                    <button class="btn btn-primary view"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary down"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                                                 </td>
+                                                              </tr>
+                                                              <tr>
+                                                                 <td>Company</td>
+                                                                 <td>Agent Name</td>
+                                                                 <td>Name Lastame</td>
+                                                                 <td>+01-987-564-87-00</td>
+                                                                 <td>300$</td>
+                                                                 <td class="btns-status debit">
+                                                                 </td>
+                                                                 <td class="btns-status deleted">
+                                                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">DELETED</span></button>
+                                                                    <button class="btn btn-primary">1</button>
+                                                                 </td>
+                                                                 <td>10/11/2017</td>
+                                                                 <td class="action-btns">
+                                                                    <button class="btn btn-primary view"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary down"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                                                 </td>
+                                                              </tr>
+                                                              <tr>
+                                                                 <td>Company</td>
+                                                                 <td>Agent Name</td>
+                                                                 <td>Name Lastame</td>
+                                                                 <td>+01-987-564-87-00</td>
+                                                                 <td>300$</td>
+                                                                 <td class="btns-status debit">
+                                                                 </td>
+                                                                 <td class="btns-status pending">
+                                                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">PENDING</span></button>
+                                                                    <button class="btn btn-primary">1</button>
+                                                                 </td>
+                                                                 <td>10/11/2017</td>
+                                                                 <td class="action-btns">
+                                                                    <button class="btn btn-primary view"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary down"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                                                 </td>
+                                                              </tr>
+                                                              <tr>
+                                                                 <td>Company</td>
+                                                                 <td>Agent Name</td>
+                                                                 <td>Name Lastame</td>
+                                                                 <td>+01-987-564-87-00</td>
+                                                                 <td>300$</td>
+                                                                 <td class="btns-status debit">
+                                                                 </td>
+                                                                 <td class="btns-status completed">
+                                                                    <button class="btn btn-primary"><span class="icon"></span><span class="btn-txt">COMPLETED</span></button>
+                                                                    <button class="btn btn-primary">1</button>
+                                                                 </td>
+                                                                 <td>10/11/2017</td>
+                                                                 <td class="action-btns">
+                                                                    <button class="btn btn-primary view"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary down"><span class="icon"></span></button>
+                                                                    <button class="btn btn-primary delete"><span class="icon"></span></button>
+                                                                 </td>
+                                                              </tr>
+                                                           </tbody>
+                                                        </table>
+                                                     </div>
+                                                  </div>
+                                               </div>
+                                               <div class="row">
+                                                  <div class="col-md-12">
+                                                     <div class="table-paging">
+                                                        <nav aria-label="Page navigation example">
+                                                           <ul class="pagination justify-content-center">
+                                                              <li class="page-item disabled">
+                                                                 <a class="page-link prev" href="#" tabindex="-1"><i class="fa fa-arrow-left" aria-hidden="true"></i>PREV</a>
+                                                              </li>
+                                                              <li class="page-item selected"><a class="page-link" href="#">1</a></li>
+                                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                              <li class="page-item dots"><a class="page-link">...</a></li>
+                                                              <li class="page-item"><a class="page-link" href="#">9</a></li>
+                                                              <li class="page-item"><a class="page-link" href="#">10</a></li>
+                                                              <li class="page-item">
+                                                                 <a class="page-link next" href="#">NEXT<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                                 </a>
+                                                              </li>
+                                                           </ul>
+                                                        </nav>
+                                                     </div>
+                                                  </div>
+                                               </div>
+                                            </div>
+                                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!--upload invoice popup end-->
                                  <button class="btn btn-primary edit" data-toggle="modal" data-target="#edit-client"><span class="icon"></span><span class="btn-txt">EDIT</span></button>
                                  <button class="btn btn-primary delete"data-toggle="modal" data-target="#delete-client"><span class="icon"></span></button>
                               </td>
