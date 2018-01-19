@@ -1,19 +1,21 @@
 $(function() {
-  $('a[href*=#]').on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-  $(document).ready( function() {
-    $("#txtEditor").Editor();
+    $('a[href*=#]').on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 500, 'linear');
+    });
+    $(document).ready(function() {
+        $("#txtEditor").Editor();
     });
 
 });
 (function() {
-    $('#login-modal input').keyup(function(){
+    $('#login-modal input').keyup(function() {
         var empty = false;
-            if (($('#login-modal input[type=text]').val() == '')||($('#login-modal input[type=password]').val() == '')) {
-                empty = true;
-            }
+        if (($('#login-modal input[type=text]').val() == '') || ($('#login-modal input[type=password]').val() == '')) {
+            empty = true;
+        }
         if (empty) {
             $('#login-modal input[type=submit]').attr('disabled', 'disabled');
         } else {
@@ -22,11 +24,11 @@ $(function() {
     });
 })();
 (function() {
-    $('#forgot-password input').keyup(function(){
+    $('#forgot-password input').keyup(function() {
         var empty = false;
-            if ($('#forgot-password input[type=text]').val() == '') {
-                empty = true;
-            }
+        if ($('#forgot-password input[type=text]').val() == '') {
+            empty = true;
+        }
         if (empty) {
             $('#forgot-password input[type=submit]').attr('disabled', 'disabled');
         } else {
@@ -34,6 +36,7 @@ $(function() {
         }
     });
 })()
+
 function validate() {
     var username = document.forms["login-form"]["user"].value;
     var password = document.forms["login-form"]["pass"].value;
@@ -60,7 +63,7 @@ function authenticate($username, $password) {
                 if ($username == username) {
                     if ($password == $(this).find("password").text()) {
                         alert('sucess');
-                      $('#login-modal').removeClass('auth-failed')
+                        $('#login-modal').removeClass('auth-failed')
                         return false;
                     } else {
                         $('#login-modal').addClass('auth-failed')
@@ -77,11 +80,11 @@ function authenticate($username, $password) {
 
 }
 //auto close modal
-$(function(){
-    $('#send-invoice').on('show.bs.modal', function(){
+$(function() {
+    $('#send-invoice').on('show.bs.modal', function() {
         var myModal = $(this);
         clearTimeout(myModal.data('hideInterval'));
-        myModal.data('hideInterval', setTimeout(function(){
+        myModal.data('hideInterval', setTimeout(function() {
             myModal.modal('hide');
         }, 3000));
     });
